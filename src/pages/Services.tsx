@@ -10,24 +10,28 @@ const Services = () => {
       description: "Delivering a full range of slickline services for land and swamp operations...",
       path: "/services/slickline",
       image: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80",
+      hoverImage: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80",
     },
     {
       title: "BHP Survey",
       description: "Capturing high-precision downhole pressure and temperature data...",
       path: "/services/bhp-survey",
       image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80",
+      hoverImage: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80",
     },
     {
       title: "Wellhead Maintenance",
       description: "Providing comprehensive wellhead maintenance to ensure safety...",
       path: "/services/wellhead",
       image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=80",
+      hoverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80",
     },
     {
       title: "Marine (Slickline Barge)",
       description: "Extending our slickline capabilities to offshore etc with our fully ready barge...",
       path: "/services/marine",
       image: "https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=600&q=80",
+      hoverImage: "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=600&q=80",
     },
   ];
 
@@ -67,11 +71,17 @@ const Services = () => {
                   to={service.path}
                   className="group relative h-[400px] md:h-[450px] rounded-lg overflow-hidden"
                 >
-                  {/* Image */}
+                  {/* Default Image */}
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                  />
+                  {/* Hover Image */}
+                  <img
+                    src={service.hoverImage}
+                    alt={service.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:scale-110"
                   />
                   
                   {/* Dark overlay on the whole card */}
