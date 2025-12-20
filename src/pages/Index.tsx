@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CTASection from "@/components/sections/CTASection";
 import ClientLogos from "@/components/sections/ClientLogos";
+import HeroSlider from "@/components/HeroSlider";
 import { Settings, TrendingUp, Wrench, Ship } from "lucide-react";
 
 const services = [
@@ -32,39 +33,50 @@ const services = [
   },
 ];
 
+const heroImages = [
+  "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1920&q=80",
+  "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=1920&q=80",
+  "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80",
+];
+
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative bg-navy min-h-[500px] md:min-h-[600px] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/95 to-navy/70" />
-        <div className="container-custom relative z-10 py-16 md:py-24">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Precision.<br />Safety.<br />Performance.
-            </h1>
-            <p className="text-lg text-gray-300 mb-8 max-w-lg">
-              WellOPT is Nigeria's leading indigenous provider of expert slickline, wellhead maintenance, and data acquisition services.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/contact"
-                className="bg-accent text-accent-foreground px-8 py-3 rounded font-semibold hover:bg-orange-hover transition-colors text-center"
-              >
-                Request a Quote
-              </Link>
-              <Link
-                to="/services"
-                className="border-2 border-white text-white px-8 py-3 rounded font-semibold hover:bg-white hover:text-navy transition-colors text-center"
-              >
-                Explore our Services
-              </Link>
+      {/* Hero Section with Image Slider */}
+      <HeroSlider 
+        images={heroImages} 
+        interval={5000}
+        overlayClass="bg-gradient-to-r from-navy/95 to-navy/60"
+      >
+        <section className="min-h-[500px] md:min-h-[600px] flex items-center">
+          <div className="container-custom py-16 md:py-24">
+            <div className="max-w-2xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in">
+                Precision.<br />Safety.<br />Performance.
+              </h1>
+              <p className="text-lg text-gray-300 mb-8 max-w-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                WellOPT is Nigeria's leading indigenous provider of expert slickline, wellhead maintenance, and data acquisition services.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+                <Link
+                  to="/contact"
+                  className="bg-accent text-accent-foreground px-8 py-3 rounded font-semibold hover:bg-orange-hover transition-colors text-center"
+                >
+                  Request a Quote
+                </Link>
+                <Link
+                  to="/services"
+                  className="border-2 border-white text-white px-8 py-3 rounded font-semibold hover:bg-white hover:text-navy transition-colors text-center"
+                >
+                  Explore our Services
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </HeroSlider>
 
       {/* Services Section */}
       <section className="py-16 md:py-24 bg-secondary">

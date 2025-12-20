@@ -220,13 +220,17 @@ const Contact = () => {
         {/* Map Section */}
         <section className="py-12">
           <div className="container-custom">
-            <div className="bg-secondary rounded-lg overflow-hidden h-[300px] md:h-[400px] flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-muted-foreground mb-2">Map placeholder</p>
-                <p className="text-sm text-muted-foreground">
-                  WellOPT Nigeria - Port Harcourt, Rivers State
-                </p>
-              </div>
+            <div className="rounded-lg overflow-hidden h-[300px] md:h-[400px]">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.6977895647394!2d7.0014!3d4.8472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d3e93a3e8bff%3A0x8a9a5c7d7a7a5c7d!2sRumuigbo%2C%20Port%20Harcourt%2C%20Rivers%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1702000000000!5m2!1sen!2sng"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="WellOPT Nigeria Location"
+              ></iframe>
             </div>
           </div>
         </section>
