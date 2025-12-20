@@ -79,7 +79,7 @@ const Index = () => {
       </HeroSlider>
 
       {/* Services Section */}
-      <section className="py-16 md:py-24 bg-secondary">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
             Our Core Services
@@ -88,16 +88,16 @@ const Index = () => {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="bg-background rounded-lg p-6 text-center hover:shadow-lg transition-shadow"
+                className="bg-background border border-border rounded-sm p-6 text-center hover:shadow-lg transition-shadow"
               >
-                <div className="w-16 h-16 mx-auto mb-4 bg-secondary rounded-full flex items-center justify-center">
-                  <service.icon className="w-8 h-8 text-navy" />
+                <div className="w-16 h-16 mx-auto mb-5 bg-[#4A9D9A] rounded-full flex items-center justify-center">
+                  <service.icon className="w-7 h-7 text-white" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-3">{service.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4">{service.description}</p>
+                <h3 className="text-base font-bold text-foreground mb-3">{service.title}</h3>
+                <p className="text-sm text-muted-foreground mb-5 leading-relaxed">{service.description}</p>
                 <Link
                   to={service.link}
-                  className="text-accent font-semibold hover:underline inline-flex items-center gap-1"
+                  className="text-accent font-semibold text-sm hover:underline"
                 >
                   Learn More
                 </Link>
