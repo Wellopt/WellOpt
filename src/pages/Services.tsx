@@ -67,15 +67,22 @@ const Services = () => {
                   to={service.path}
                   className="group relative h-[400px] md:h-[450px] rounded-lg overflow-hidden"
                 >
+                  {/* Image */}
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-xl md:text-2xl font-bold mb-2">{service.title}</h3>
-                    <p className="text-gray-200 text-sm md:text-base">{service.description}</p>
+                  
+                  {/* Dark overlay on the whole card */}
+                  <div className="absolute inset-0 bg-primary/30 transition-colors duration-500 group-hover:bg-accent/30"></div>
+                  
+                  {/* Text container with background that changes from navy to orange */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-primary transition-colors duration-500 group-hover:bg-accent">
+                    <div className="p-6 text-white">
+                      <h3 className="text-xl md:text-2xl font-bold mb-2">{service.title}</h3>
+                      <p className="text-white/90 text-sm md:text-base">{service.description}</p>
+                    </div>
                   </div>
                 </Link>
               ))}
