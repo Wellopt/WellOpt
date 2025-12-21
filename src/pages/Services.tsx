@@ -84,8 +84,8 @@ const Services = () => {
                     className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:scale-110"
                   />
                   
-                  {/* Dark overlay on the whole card */}
-                  <div className="absolute inset-0 bg-primary/30 transition-colors duration-500 group-hover:bg-accent/30"></div>
+                  {/* Dark overlay on the whole card - stays same color on hover */}
+                  <div className="absolute inset-0 bg-primary/30"></div>
                   
                   {/* Text container with background that changes from navy to orange */}
                   <div className="absolute bottom-0 left-0 right-0 bg-primary transition-colors duration-500 group-hover:bg-accent">
