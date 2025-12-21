@@ -83,7 +83,7 @@ const Header = () => {
                         <Link
                           key={service.path}
                           to={service.path}
-                          className="block px-4 py-2.5 hover:bg-white/10 transition-colors text-sm text-white"
+                          className="block px-4 py-2.5 hover:text-accent transition-colors text-sm text-white"
                         >
                           {service.name}
                         </Link>

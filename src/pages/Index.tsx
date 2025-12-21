@@ -62,13 +62,13 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
                 <Link
                   to="/contact"
-                  className="bg-accent text-accent-foreground px-8 py-3 rounded font-semibold hover:bg-orange-hover transition-colors text-center"
+                  className="bg-accent text-accent-foreground px-8 py-3 rounded-md font-semibold hover:bg-orange-hover transition-colors text-center"
                 >
                   Request a Quote
                 </Link>
                 <Link
                   to="/services"
-                  className="border-2 border-white text-white px-8 py-3 rounded font-semibold hover:bg-white hover:text-navy transition-colors text-center"
+                  className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-navy transition-colors text-center"
                 >
                   Explore our Services
                 </Link>
@@ -84,17 +84,17 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
             Our Core Services
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-10">
             {services.map((service) => (
               <div
                 key={service.title}
-                className="bg-background border border-border rounded-sm p-6 text-center hover:shadow-lg transition-shadow"
+                className="bg-background border border-border rounded-sm p-6 pt-0 text-center hover:shadow-lg transition-shadow flex flex-col"
               >
-                <div className="w-16 h-16 mx-auto mb-5 bg-[#002D46] rounded-full flex items-center justify-center">
+                <div className="w-16 h-16 mx-auto -mt-8 mb-5 bg-[#002D46] rounded-full flex items-center justify-center">
                   <service.icon className="w-7 h-7 text-white" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-base font-bold text-foreground mb-3">{service.title}</h3>
-                <p className="text-sm text-muted-foreground mb-5 leading-relaxed">{service.description}</p>
+                <p className="text-sm text-muted-foreground mb-5 leading-relaxed flex-1">{service.description}</p>
                 <Link
                   to={service.link}
                   className="text-accent font-semibold text-sm hover:underline"
