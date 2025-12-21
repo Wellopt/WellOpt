@@ -16,17 +16,22 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-navy min-h-[400px] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/95 to-navy/70" />
-        <div className="container-custom relative z-10 py-16 md:py-24">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Who We Are
-            </h1>
-            <p className="text-lg text-gray-300">
-              Meet the trusted, indigenous partner and expert team committed to Nigerian well service excellence.
-            </p>
-          </div>
+      <section className="relative h-[50vh] md:h-[60vh] flex items-center">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=1920&q=80')`,
+          }}
+        >
+          <div className="absolute inset-0 bg-primary/70"></div>
+        </div>
+        <div className="container-custom relative z-10">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+            Who We Are
+          </h1>
+          <p className="text-lg md:text-xl text-gray-200 max-w-xl">
+            Meet the trusted, indigenous partner and expert team committed to Nigerian well service excellence.
+          </p>
         </div>
       </section>
 
