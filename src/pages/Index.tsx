@@ -90,7 +90,7 @@ const Index = () => {
                 key={service.title}
                 className="bg-background border border-border rounded-sm p-6 text-center hover:shadow-lg transition-shadow"
               >
-                <div className="w-16 h-16 mx-auto mb-5 bg-[#4A9D9A] rounded-full flex items-center justify-center">
+                <div className="w-16 h-16 mx-auto mb-5 bg-[#002D46] rounded-full flex items-center justify-center">
                   <service.icon className="w-7 h-7 text-white" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-base font-bold text-foreground mb-3">{service.title}</h3>

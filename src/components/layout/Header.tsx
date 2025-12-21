@@ -78,12 +78,12 @@ const Header = () => {
                 </button>
                 {isServicesOpen && (
                   <div className="absolute top-full left-0 pt-2">
-                    <div className="w-56 bg-background rounded-lg shadow-lg border py-2">
+                    <div className="w-56 bg-[#002D46] rounded-lg shadow-lg py-2">
                       {services.map((service) => (
                         <Link
                           key={service.path}
                           to={service.path}
-                          className="block px-4 py-2.5 hover:bg-secondary transition-colors text-sm"
+                          className="block px-4 py-2.5 hover:bg-white/10 transition-colors text-sm text-white"
                         >
                           {service.name}
                         </Link>
