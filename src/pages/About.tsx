@@ -60,8 +60,16 @@ const About = () => {
       </section>
 
       {/* Vision Section */}
-      <section className="py-16 md:py-20 bg-navy">
-        <div className="container-custom text-center">
+      <section className="relative py-16 md:py-20">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=1920&q=80')`,
+          }}
+        >
+          <div className="absolute inset-0 bg-[#002D46CC]"></div>
+        </div>
+        <div className="container-custom text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-accent mb-6">
             Our Vision
           </h2>

@@ -10,9 +10,9 @@ const Footer = ({ showCTA = true }: FooterProps) => {
     <footer className="bg-[#333333] text-white">
       {/* CTA Banner inside Footer */}
       {showCTA && (
-        <div className="container-custom pt-12 md:pt-16">
+        <div className="container-custom pt-10 md:pt-14">
           <div 
-            className="relative rounded-lg overflow-hidden"
+            className="relative rounded-xl overflow-hidden"
             style={{
               backgroundImage: `url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80')`,
               backgroundSize: 'cover',
@@ -20,17 +20,17 @@ const Footer = ({ showCTA = true }: FooterProps) => {
             }}
           >
             <div className="absolute inset-0 bg-[#002D46CC]"></div>
-            <div className="relative z-10 px-8 py-10 md:py-12 md:px-12">
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-3">
+            <div className="relative z-10 px-6 py-8 md:py-10 md:px-10">
+              <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2">
                 Get Your Next Project Done Right
               </h2>
-              <p className="text-gray-200 max-w-xl mb-6 text-sm md:text-base">
+              <p className="text-gray-200 max-w-xl mb-5 text-sm">
                 Contact our team of experts today. Let's discuss your operational
                 needs and develop a safe, efficient, and cost-effective solution.
               </p>
               <Link
                 to="/contact"
-                className="inline-flex bg-accent text-accent-foreground px-6 py-2.5 rounded font-semibold hover:bg-orange-hover transition-colors text-sm md:text-base"
+                className="inline-flex bg-accent text-accent-foreground px-5 py-2 rounded font-semibold hover:bg-orange-hover transition-colors text-sm"
               >
                 Contact Us
               </Link>
