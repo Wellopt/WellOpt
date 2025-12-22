@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import CTASection from "@/components/sections/CTASection";
 import { Mail, Phone } from "lucide-react";
 import { toast } from "sonner";
 
@@ -45,7 +44,7 @@ const Contact = () => {
               backgroundImage: `url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80')`,
             }}
           >
-            <div className="absolute inset-0 bg-primary/70"></div>
+            <div className="absolute inset-0 bg-[#002D46CC]"></div>
           </div>
           <div className="container-custom relative z-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
@@ -235,7 +234,6 @@ const Contact = () => {
           </div>
         </section>
 
-        <CTASection />
       </main>
 
       <Footer />

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import CTASection from "@/components/sections/CTASection";
 import ClientLogos from "@/components/sections/ClientLogos";
 import HeroSlider from "@/components/HeroSlider";
 import { Settings, TrendingUp, Wrench, Ship } from "lucide-react";
@@ -167,7 +166,6 @@ const Index = () => {
       </section>
 
       <ClientLogos />
-      <CTASection />
       <Footer />
     </div>
   );

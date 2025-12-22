@@ -1,9 +1,44 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone } from "lucide-react";
 
-const Footer = () => {
+interface FooterProps {
+  showCTA?: boolean;
+}
+
+const Footer = ({ showCTA = true }: FooterProps) => {
   return (
     <footer className="bg-[#333333] text-white">
+      {/* CTA Banner inside Footer */}
+      {showCTA && (
+        <div className="container-custom pt-12 md:pt-16">
+          <div 
+            className="relative rounded-lg overflow-hidden"
+            style={{
+              backgroundImage: `url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80')`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            <div className="absolute inset-0 bg-[#002D46CC]"></div>
+            <div className="relative z-10 px-8 py-10 md:py-12 md:px-12">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-3">
+                Get Your Next Project Done Right
+              </h2>
+              <p className="text-gray-200 max-w-xl mb-6 text-sm md:text-base">
+                Contact our team of experts today. Let's discuss your operational
+                needs and develop a safe, efficient, and cost-effective solution.
+              </p>
+              <Link
+                to="/contact"
+                className="inline-flex bg-accent text-accent-foreground px-6 py-2.5 rounded font-semibold hover:bg-orange-hover transition-colors text-sm md:text-base"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="container-custom py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Logo & Info */}

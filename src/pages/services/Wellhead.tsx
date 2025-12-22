@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import CTASection from "@/components/sections/CTASection";
 import { Wrench, AlertTriangle, Activity, Settings, Search, RefreshCw } from "lucide-react";
 
 const Wellhead = () => {
@@ -27,7 +26,7 @@ const Wellhead = () => {
               backgroundImage: `url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1920&q=80')`,
             }}
           >
-            <div className="absolute inset-0 bg-primary/70"></div>
+            <div className="absolute inset-0 bg-[#002D46CC]"></div>
           </div>
           <div className="container-custom relative z-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
@@ -149,7 +148,6 @@ const Wellhead = () => {
           </div>
         </section>
 
-        <CTASection />
       </main>
 
       <Footer />
