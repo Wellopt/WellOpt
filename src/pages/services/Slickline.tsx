@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import CTASection from "@/components/sections/CTASection";
 import { Settings, CheckCircle, TrendingUp, Search, ShieldCheck, Zap, Layers, Menu } from "lucide-react";
 
 const Slickline = () => {
@@ -29,7 +28,7 @@ const Slickline = () => {
               backgroundImage: `url('https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=1920&q=80')`,
             }}
           >
-            <div className="absolute inset-0 bg-primary/70"></div>
+            <div className="absolute inset-0 bg-[#002D46CC]"></div>
           </div>
           <div className="container-custom relative z-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
@@ -138,7 +137,6 @@ const Slickline = () => {
           </div>
         </section>
 
-        <CTASection />
       </main>
 
       <Footer />
