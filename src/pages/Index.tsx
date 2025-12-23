@@ -4,6 +4,12 @@ import Footer from "@/components/layout/Footer";
 import ClientLogos from "@/components/sections/ClientLogos";
 import HeroSlider from "@/components/HeroSlider";
 import { Settings, TrendingUp, Wrench, Ship } from "lucide-react";
+import heroOffice from "@/assets/hero-office.png";
+import heroTeam from "@/assets/hero-team.png";
+import heroMarine from "@/assets/hero-marine.png";
+import heroEquipment from "@/assets/hero-equipment.png";
+import teamDiscussion from "@/assets/team-discussion.jpg";
+import workerBanner from "@/assets/worker-banner.png";
 
 const services = [
   {
@@ -32,11 +38,7 @@ const services = [
   },
 ];
 
-const heroImages = [
-  "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1920&q=80",
-  "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=1920&q=80",
-  "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80",
-];
+const heroImages = [heroOffice, heroTeam, heroMarine, heroEquipment];
 
 const Index = () => {
   return (
@@ -110,8 +112,12 @@ const Index = () => {
       <section className="py-16 md:py-24 bg-background">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="bg-secondary rounded-lg aspect-[4/3] flex items-center justify-center">
-              <span className="text-muted-foreground">Expert Team Image</span>
+            <div className="rounded-lg overflow-hidden aspect-[4/3]">
+              <img 
+                src={teamDiscussion} 
+                alt="WellOPT expert team in discussion" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
@@ -158,8 +164,12 @@ const Index = () => {
                 Learn More
               </Link>
             </div>
-            <div className="bg-secondary rounded-lg aspect-[4/3] flex items-center justify-center order-first md:order-last">
-              <span className="text-muted-foreground">Safety Image</span>
+            <div className="rounded-lg overflow-hidden aspect-[4/3] order-first md:order-last">
+              <img 
+                src={workerBanner} 
+                alt="WellOPT safety commitment" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

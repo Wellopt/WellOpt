@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone } from "lucide-react";
+import footerLogo from "@/assets/footer-logo.png";
+import workerBanner from "@/assets/worker-banner.png";
 
 interface FooterProps {
   showCTA?: boolean;
@@ -14,7 +16,7 @@ const Footer = ({ showCTA = true }: FooterProps) => {
           <div 
             className="relative overflow-hidden mx-auto"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80')`,
+              backgroundImage: `url('${workerBanner}')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               borderRadius: '60px',
@@ -47,13 +49,7 @@ const Footer = ({ showCTA = true }: FooterProps) => {
           {/* Logo & Info */}
           <div>
             <Link to="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold">
-                <span className="text-accent">Well</span>
-                <span className="text-white">OPT</span>
-              </span>
-              <span className="block text-[10px] tracking-wider text-gray-400 -mt-1">
-                A well services company
-              </span>
+              <img src={footerLogo} alt="WellOPT" className="h-8" />
             </Link>
             <p className="text-sm text-gray-400 mb-6">
               Our determination is to satisfy our customers, employees and shareholders...

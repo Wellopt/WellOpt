@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import heroEquipment from "@/assets/hero-equipment.png";
+import heroTeam from "@/assets/hero-team.png";
+import heroMarine from "@/assets/hero-marine.png";
+import heroOffice from "@/assets/hero-office.png";
 
 const Services = () => {
   const services = [
@@ -8,29 +12,29 @@ const Services = () => {
       title: "Slickline (Land/Swamp)",
       description: "Delivering a full range of slickline services for land and swamp operations...",
       path: "/services/slickline",
-      image: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80",
-      hoverImage: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80",
+      image: heroEquipment,
+      hoverImage: heroTeam,
     },
     {
       title: "BHP Survey",
       description: "Capturing high-precision downhole pressure and temperature data...",
       path: "/services/bhp-survey",
-      image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80",
-      hoverImage: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80",
+      image: heroTeam,
+      hoverImage: heroEquipment,
     },
     {
       title: "Wellhead Maintenance",
       description: "Providing comprehensive wellhead maintenance to ensure safety...",
       path: "/services/wellhead",
-      image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=80",
-      hoverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80",
+      image: heroOffice,
+      hoverImage: heroEquipment,
     },
     {
       title: "Marine (Slickline Barge)",
       description: "Extending our slickline capabilities to offshore etc with our fully ready barge...",
       path: "/services/marine",
-      image: "https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=600&q=80",
-      hoverImage: "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=600&q=80",
+      image: heroMarine,
+      hoverImage: heroTeam,
     },
   ];
 
@@ -44,7 +48,7 @@ const Services = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80')`,
+              backgroundImage: `url('${heroEquipment}')`,
             }}
           >
             <div className="absolute inset-0 bg-[#002D46CC]"></div>
