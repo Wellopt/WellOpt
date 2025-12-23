@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
+import navLogo from "@/assets/nav-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,15 +31,8 @@ const Header = () => {
         <div className="container-custom">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2">
-              <span className="text-2xl font-bold">
-                <span className="text-accent">Well</span>
-                <span className="text-primary">●</span>
-                <span className="text-primary">PT</span>
-              </span>
-              <span className="text-[10px] text-muted-foreground hidden sm:block leading-tight">
-                A well Service Company
-              </span>
+            <Link to="/" className="flex items-center">
+              <img src={navLogo} alt="WellOPT - A well service company" className="h-10" />
             </Link>
 
             {/* Desktop Navigation */}
@@ -130,15 +124,8 @@ const Header = () => {
             {/* Mobile Header */}
             <div className="container-custom">
               <div className="flex items-center justify-between h-20">
-                <Link to="/" className="flex items-center gap-2" onClick={closeMenu}>
-                  <span className="text-2xl font-bold">
-                    <span className="text-accent">Well</span>
-                    <span className="text-white">●</span>
-                    <span className="text-white">PT</span>
-                  </span>
-                  <span className="text-[10px] text-gray-300 leading-tight">
-                    A well Service Company
-                  </span>
+                <Link to="/" className="flex items-center" onClick={closeMenu}>
+                  <img src={navLogo} alt="WellOPT" className="h-10 brightness-0 invert" />
                 </Link>
                 <button
                   onClick={closeMenu}

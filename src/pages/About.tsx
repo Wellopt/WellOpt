@@ -1,13 +1,8 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-
-const clients = [
-  "Renaissance", "Eni", "Seplat", "Heirs Energies",
-  "Chorus", "Belemaoil", "Waltersmith", "Universal Energy",
-  "NNPC", "Newcross", "SEPTA", "Conoil",
-  "AIPDC", "Energia", "AA Holdings", "First E&P",
-  "Oando", "Sahara",
-];
+import heroTeam from "@/assets/hero-team.png";
+import teamDiscussion from "@/assets/team-discussion.jpg";
+import clientLogosImage from "@/assets/client-logos.png";
 
 const About = () => {
   return (
@@ -19,7 +14,7 @@ const About = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=1920&q=80')`,
+            backgroundImage: `url('${heroTeam}')`,
           }}
         >
           <div className="absolute inset-0 bg-[#002D46CC]"></div>
@@ -52,8 +47,12 @@ const About = () => {
                 From our purpose-built facilities in Port Harcourt, we have, since 2007, built a strong reputation for quality, reliability, and technical excellence in serving operators across Nigeria's oil and gas sector.
               </p>
             </div>
-            <div className="bg-secondary rounded-lg aspect-[4/3] flex items-center justify-center">
-              <span className="text-muted-foreground">Company Image</span>
+            <div className="rounded-lg overflow-hidden aspect-[4/3]">
+              <img 
+                src={teamDiscussion} 
+                alt="WellOPT team discussion" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -64,7 +63,7 @@ const About = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=1920&q=80')`,
+            backgroundImage: `url('${heroTeam}')`,
           }}
         >
           <div className="absolute inset-0 bg-[#002D46CC]"></div>
@@ -113,17 +112,14 @@ const About = () => {
             Our Clients
           </h2>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
-            Our reputation is built on performance. From our first project to today, we've partnered with industry leaders to deliver safe, precise, and innovative well solutions, forging relationships defined by trust, results, and shared success. They are:
+            Our reputation is built on performance. From our first project to today, we've partnered with industry leaders to deliver safe, precise, and innovative well solutions, forging relationships defined by trust, results, and shared success.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {clients.map((client) => (
-              <div
-                key={client}
-                className="bg-secondary rounded-lg p-4 md:p-6 flex items-center justify-center h-16 md:h-20 hover:shadow-md transition-shadow"
-              >
-                <span className="font-semibold text-muted-foreground text-sm md:text-base">{client}</span>
-              </div>
-            ))}
+          <div className="flex justify-center">
+            <img 
+              src={clientLogosImage} 
+              alt="Our trusted clients including Renaissance, Eni, Seplat, Heirs Energies, Chorus, Belemaoil, Waltersmith, and Universal Energy" 
+              className="max-w-full h-auto"
+            />
           </div>
         </div>
       </section>

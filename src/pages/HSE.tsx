@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { CheckCircle } from "lucide-react";
+import heroTeam from "@/assets/hero-team.png";
 
 const stats = [
   { value: "100%", label: "Compliance with NUPRC & NCDMB Regulations" },
@@ -18,7 +19,7 @@ const HSE = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80')`,
+            backgroundImage: `url('${heroTeam}')`,
           }}
         >
           <div className="absolute inset-0 bg-[#002D46CC]"></div>
