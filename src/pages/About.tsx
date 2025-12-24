@@ -1,8 +1,9 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import heroTeam from "@/assets/hero-team.png";
-import teamDiscussion from "@/assets/team-discussion.jpg";
-import clientLogosImage from "@/assets/client-logos.png";
+import aboutHero from "@/assets/about-hero.png";
+import companyOverview from "@/assets/company-overview.png";
+import ourVision from "@/assets/our-vision.png";
+import ourClients from "@/assets/our-clients.png";
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('${heroTeam}')`,
+            backgroundImage: `url('${aboutHero}')`,
           }}
         >
           <div className="absolute inset-0 bg-[#002D46CC]"></div>
@@ -49,8 +50,8 @@ const About = () => {
             </div>
             <div className="rounded-lg overflow-hidden aspect-[4/3]">
               <img 
-                src={teamDiscussion} 
-                alt="WellOPT team discussion" 
+                src={companyOverview} 
+                alt="WellOPT company building" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -63,7 +64,7 @@ const About = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('${heroTeam}')`,
+            backgroundImage: `url('${ourVision}')`,
           }}
         >
           <div className="absolute inset-0 bg-[#002D46CC]"></div>
@@ -116,7 +117,7 @@ const About = () => {
           </p>
           <div className="flex justify-center">
             <img 
-              src={clientLogosImage} 
+              src={ourClients} 
               alt="Our trusted clients including Renaissance, Eni, Seplat, Heirs Energies, Chorus, Belemaoil, Waltersmith, and Universal Energy" 
               className="max-w-full h-auto"
             />

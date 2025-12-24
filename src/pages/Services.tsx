@@ -5,6 +5,7 @@ import heroEquipment from "@/assets/hero-equipment.png";
 import heroTeam from "@/assets/hero-team.png";
 import heroMarine from "@/assets/hero-marine.png";
 import heroOffice from "@/assets/hero-office.png";
+import coreServices from "@/assets/core-services.png";
 
 const Services = () => {
   const services = [
@@ -47,9 +48,9 @@ const Services = () => {
         <section className="relative h-[50vh] md:h-[60vh] flex items-center">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url('${heroEquipment}')`,
-            }}
+          style={{
+            backgroundImage: `url('${coreServices}')`,
+          }}
           >
             <div className="absolute inset-0 bg-[#002D46CC]"></div>
           </div>
