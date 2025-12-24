@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Anchor, CheckCircle, TrendingUp, Zap, Database, Wrench } from "lucide-react";
+import slicklineCard from "@/assets/slickline-card.png";
 
 const Marine = () => {
   const capabilities = [
@@ -23,7 +24,7 @@ const Marine = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=1920&q=80')`,
+              backgroundImage: `url('${slicklineCard}')`,
             }}
           >
             <div className="absolute inset-0 bg-[#002D46CC]"></div>

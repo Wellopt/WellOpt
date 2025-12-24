@@ -16,7 +16,7 @@ const HSE = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-[50vh] md:h-[60vh] flex items-center">
+      <section className="relative h-[40vh] md:h-[50vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -70,7 +70,7 @@ const HSE = () => {
       </section>
 
       {/* Safety Track Record */}
-      <section className="relative py-16 md:py-20">
+      <section className="relative py-12 md:py-16">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{

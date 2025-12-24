@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Wrench, AlertTriangle, Activity, Settings, Search, RefreshCw } from "lucide-react";
+import wellheadCard from "@/assets/wellhead-card.png";
 
 const Wellhead = () => {
   const capabilities = [
@@ -23,7 +24,7 @@ const Wellhead = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1920&q=80')`,
+              backgroundImage: `url('${wellheadCard}')`,
             }}
           >
             <div className="absolute inset-0 bg-[#002D46CC]"></div>

@@ -114,7 +114,7 @@ const Footer = ({ showCTA = true }: FooterProps) => {
               <li><Link to="/about" className="hover:text-accent transition-colors">About Us</Link></li>
               <li><Link to="/hse" className="hover:text-accent transition-colors">HSE</Link></li>
               <li><Link to="/#clients" className="hover:text-accent transition-colors">Our Clients</Link></li>
-              <li><Link to="/staff" className="hover:text-accent transition-colors">Staff</Link></li>
+              <li><a href="https://d3345.can1.stableserver.net:2096/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Staff</a></li>
             </ul>
           </div>
 
