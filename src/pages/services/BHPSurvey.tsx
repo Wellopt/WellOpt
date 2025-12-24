@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Gauge, FlaskConical, TrendingUp, Activity, Grid3X3, Target } from "lucide-react";
+import bhpCard from "@/assets/bhp-card.png";
 
 const BHPSurvey = () => {
   const applications = [
@@ -23,7 +24,7 @@ const BHPSurvey = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80')`,
+              backgroundImage: `url('${bhpCard}')`,
             }}
           >
             <div className="absolute inset-0 bg-[#002D46CC]"></div>

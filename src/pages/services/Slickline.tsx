@@ -2,6 +2,11 @@ import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Settings, CheckCircle, TrendingUp, Search, ShieldCheck, Zap, Layers, Menu } from "lucide-react";
+import slicklineCard from "@/assets/slickline-card.png";
+import equipment1 from "@/assets/equipment-1.png";
+import equipment2 from "@/assets/equipment-2.png";
+import equipment3 from "@/assets/equipment-3.png";
+import equipment4 from "@/assets/equipment-4.png";
 
 const Slickline = () => {
   const capabilities = [
@@ -25,7 +30,7 @@ const Slickline = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=1920&q=80')`,
+              backgroundImage: `url('${slicklineCard}')`,
             }}
           >
             <div className="absolute inset-0 bg-[#002D46CC]"></div>
@@ -98,22 +103,22 @@ const Slickline = () => {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80"
+                  src={equipment1}
                   alt="Slickline equipment"
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80"
+                  src={equipment2}
                   alt="Slickline truck"
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=80"
+                  src={equipment3}
                   alt="Equipment detail"
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=600&q=80"
+                  src={equipment4}
                   alt="Operations"
                   className="w-full h-48 object-cover rounded-lg"
                 />

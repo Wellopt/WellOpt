@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import heroEquipment from "@/assets/hero-equipment.png";
-import heroTeam from "@/assets/hero-team.png";
-import heroMarine from "@/assets/hero-marine.png";
-import heroOffice from "@/assets/hero-office.png";
 import coreServices from "@/assets/core-services.png";
+import slicklineCard from "@/assets/slickline-card.png";
+import bhpCard from "@/assets/bhp-card.png";
+import bhpHover from "@/assets/bhp-hover.png";
+import wellheadCard from "@/assets/wellhead-card.png";
+import wellheadHover from "@/assets/wellhead-hover.png";
+import marineHover from "@/assets/marine-hover.png";
 
 const Services = () => {
   const services = [
@@ -13,29 +15,29 @@ const Services = () => {
       title: "Slickline (Land/Swamp)",
       description: "Delivering a full range of slickline services for land and swamp operations...",
       path: "/services/slickline",
-      image: heroEquipment,
-      hoverImage: heroTeam,
+      image: slicklineCard,
+      hoverImage: slicklineCard,
     },
     {
       title: "BHP Survey",
       description: "Capturing high-precision downhole pressure and temperature data...",
       path: "/services/bhp-survey",
-      image: heroTeam,
-      hoverImage: heroEquipment,
+      image: bhpCard,
+      hoverImage: bhpHover,
     },
     {
       title: "Wellhead Maintenance",
       description: "Providing comprehensive wellhead maintenance to ensure safety...",
       path: "/services/wellhead",
-      image: heroOffice,
-      hoverImage: heroEquipment,
+      image: wellheadCard,
+      hoverImage: wellheadHover,
     },
     {
       title: "Marine (Slickline Barge)",
       description: "Extending our slickline capabilities to offshore etc with our fully ready barge...",
       path: "/services/marine",
-      image: heroMarine,
-      hoverImage: heroTeam,
+      image: slicklineCard,
+      hoverImage: marineHover,
     },
   ];
 
@@ -45,7 +47,7 @@ const Services = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[50vh] md:h-[60vh] flex items-center">
+        <section className="relative h-[40vh] md:h-[50vh] flex items-center">
           <div
             className="absolute inset-0 bg-cover bg-center"
           style={{
