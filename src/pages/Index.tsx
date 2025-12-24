@@ -8,8 +8,8 @@ import heroOffice from "@/assets/hero-office.png";
 import heroTeam from "@/assets/hero-team.png";
 import heroMarine from "@/assets/hero-marine.png";
 import heroEquipment from "@/assets/hero-equipment.png";
+import expertPartner from "@/assets/expert-partner.png";
 import teamDiscussion from "@/assets/team-discussion.jpg";
-import workerBanner from "@/assets/worker-banner.png";
 
 const services = [
   {
@@ -114,8 +114,8 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-lg overflow-hidden aspect-[4/3]">
               <img 
-                src={teamDiscussion} 
-                alt="WellOPT expert team in discussion" 
+                src={expertPartner} 
+                alt="WellOPT expert team member" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -166,7 +166,7 @@ const Index = () => {
             </div>
             <div className="rounded-lg overflow-hidden aspect-[4/3] order-first md:order-last">
               <img 
-                src={workerBanner} 
+                src={teamDiscussion} 
                 alt="WellOPT safety commitment" 
                 className="w-full h-full object-cover"
               />

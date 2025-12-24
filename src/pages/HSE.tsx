@@ -1,7 +1,8 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { CheckCircle } from "lucide-react";
-import heroTeam from "@/assets/hero-team.png";
+import safetyTeam from "@/assets/safety-team.png";
+import safetyTrackRecord from "@/assets/safety-track-record.jpg";
 
 const stats = [
   { value: "100%", label: "Compliance with NUPRC & NCDMB Regulations" },
@@ -19,7 +20,7 @@ const HSE = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('${heroTeam}')`,
+            backgroundImage: `url('${safetyTeam}')`,
           }}
         >
           <div className="absolute inset-0 bg-[#002D46CC]"></div>
@@ -69,8 +70,16 @@ const HSE = () => {
       </section>
 
       {/* Safety Track Record */}
-      <section className="py-16 md:py-20 bg-navy">
-        <div className="container-custom">
+      <section className="relative py-16 md:py-20">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url('${safetyTrackRecord}')`,
+          }}
+        >
+          <div className="absolute inset-0 bg-navy/90"></div>
+        </div>
+        <div className="container-custom relative z-10">
           <div className="flex items-center gap-3 mb-10">
             <CheckCircle className="w-8 h-8 text-white" />
             <h2 className="text-xl md:text-2xl font-bold text-white uppercase tracking-wide">
