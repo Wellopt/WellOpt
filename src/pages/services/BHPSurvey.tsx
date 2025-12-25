@@ -3,6 +3,9 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Gauge, FlaskConical, TrendingUp, Activity, Grid3X3, Target } from "lucide-react";
 import bhpCard from "@/assets/bhp-card.png";
+import bhpEquipment1 from "@/assets/bhp-equipment-1.png";
+import bhpEquipment2 from "@/assets/bhp-equipment-2.png";
+import bhpEquipment3 from "@/assets/bhp-equipment-3.png";
 
 const BHPSurvey = () => {
   const applications = [
@@ -92,21 +95,21 @@ const BHPSurvey = () => {
                   and low power consumption.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 <img
-                  src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80"
-                  alt="BHP Survey equipment"
+                  src={bhpEquipment1}
+                  alt="BHP Survey equipment kit"
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1581092160607-ee67df9c8a6e?w=600&q=80"
-                  alt="Gauge equipment"
+                  src={bhpEquipment2}
+                  alt="Gauge equipment case"
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=80"
+                  src={bhpEquipment3}
                   alt="Field technician"
-                  className="w-full h-48 object-cover rounded-lg col-span-2"
+                  className="w-full h-48 object-cover rounded-lg"
                 />
               </div>
             </div>
