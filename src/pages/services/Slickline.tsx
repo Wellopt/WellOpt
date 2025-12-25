@@ -7,6 +7,7 @@ import equipment1 from "@/assets/equipment-1.png";
 import equipment2 from "@/assets/equipment-2.png";
 import equipment3 from "@/assets/equipment-3.png";
 import equipment4 from "@/assets/equipment-4.png";
+import equipment5 from "@/assets/equipment-5.png";
 
 const Slickline = () => {
   const capabilities = [
@@ -121,6 +122,11 @@ const Slickline = () => {
                   src={equipment4}
                   alt="Operations"
                   className="w-full h-48 object-cover rounded-lg"
+                />
+                <img
+                  src={equipment5}
+                  alt="Slickline machinery"
+                  className="w-full h-48 object-cover rounded-lg col-span-2"
                 />
               </div>
             </div>
