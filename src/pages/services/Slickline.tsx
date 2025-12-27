@@ -87,47 +87,55 @@ const Slickline = () => {
         {/* Equipment & Technology */}
         <section className="section-padding">
           <div className="container-custom">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-                  EQUIPMENT & TECHNOLOGY
-                </h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Our equipment fleet is engineered for reliability and performance in Nigerian
-                  land and swamp operations. We deploy complete, self-contained operational cells
-                  featuring truck-mounted double drum units and portable Slickline Crane Trucks for
-                  efficient rig-up. Our units are equipped with rig-safe power packages, including
-                  ESD valves and approved spark arrestors. We maintain a full inventory of
-                  certified Pressure Control Equipment (PCE), including hydraulic and manual
-                  Wireline BOPs in 3-1/2", 4.5", and 7" sizes rated up to 10,000 psi.
-                </p>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <img
-                  src={equipment1}
-                  alt="Slickline equipment"
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-                <img
-                  src={equipment2}
-                  alt="Slickline truck"
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-                <img
-                  src={equipment3}
-                  alt="Equipment detail"
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-                <img
-                  src={equipment4}
-                  alt="Operations"
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-                <img
-                  src={equipment5}
-                  alt="Slickline machinery"
-                  className="w-full h-48 object-cover rounded-lg col-span-2"
-                />
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                EQUIPMENT & TECHNOLOGY
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-4xl">
+                Our equipment fleet is engineered for reliability and performance in Nigerian
+                land and swamp operations. We deploy complete, self-contained operational cells
+                featuring truck-mounted double drum units and portable Slickline Crane Trucks for
+                efficient rig-up. Our units are equipped with rig-safe power packages, including
+                ESD valves and approved spark arrestors. We maintain a full inventory of
+                certified Pressure Control Equipment (PCE), including hydraulic and manual
+                Wireline BOPs in 3-1/2", 4.5", and 7" sizes rated up to 10,000 psi.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="rounded-lg overflow-hidden border border-gray-200">
+                  <img
+                    src={equipment1}
+                    alt="Slickline equipment"
+                    className="w-full h-64 object-contain bg-white"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden border border-gray-200">
+                  <img
+                    src={equipment2}
+                    alt="Slickline truck"
+                    className="w-full h-64 object-contain bg-white"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden border border-gray-200">
+                  <img
+                    src={equipment3}
+                    alt="Equipment detail"
+                    className="w-full h-64 object-contain bg-white"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden border border-gray-200">
+                  <img
+                    src={equipment4}
+                    alt="Slickline operations"
+                    className="w-full h-64 object-contain bg-white"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden md:col-span-2 border border-gray-200">
+                  <img
+                    src={equipment5}
+                    alt="Slickline machinery"
+                    className="w-full h-64 object-contain bg-white"
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -112,7 +112,7 @@ const Index = () => {
       <section className="py-16 md:py-24 bg-background">
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="rounded-lg overflow-hidden aspect-[4/3]">
+            <div className="rounded-lg overflow-hidden aspect-[16/9]">
               <img 
                 src={expertPartner} 
                 alt="WellOPT expert team member" 
@@ -164,7 +164,7 @@ const Index = () => {
                 Learn More
               </Link>
             </div>
-            <div className="rounded-lg overflow-hidden aspect-[4/3] order-first md:order-last">
+            <div className="rounded-lg overflow-hidden aspect-[16/9] order-first md:order-last">
               <img 
                 src={teamDiscussion} 
                 alt="WellOPT safety commitment" 

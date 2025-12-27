@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Mail, Phone } from "lucide-react";
 import { toast } from "sonner";
+import workerBanner from "@/assets/worker-banner.png";
 
 const Contact = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -19,16 +22,33 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent successfully! We'll get back to you soon.");
-    setFormData({
-      fullName: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
+    
+    try {
+      const response = await fetch("https://formspree.io/f/xzdbeqde", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+        navigate("/thank-you");
+      } else {
+        toast.error("Oops! Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      toast.error("Oops! Something went wrong. Please try again later.");
+    }
   };
 
   return (
@@ -41,7 +61,7 @@ const Contact = () => {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80')`,
+              backgroundImage: `url('${workerBanner}')`,
             }}
           >
             <div className="absolute inset-0 bg-[#002D46CC]"></div>
@@ -221,14 +241,14 @@ const Contact = () => {
           <div className="container-custom">
             <div className="rounded-lg overflow-hidden h-[300px] md:h-[400px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.6977895647394!2d7.0014!3d4.8472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d3e93a3e8bff%3A0x8a9a5c7d7a7a5c7d!2sRumuigbo%2C%20Port%20Harcourt%2C%20Rivers%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1702000000000!5m2!1sen!2sng"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.4902406400215!2d6.982804574380204!3d4.85719029511849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069ce20010726fd%3A0xb6acb2d2dadd77f9!2sWellOPT%20Nigeria%20Ltd!5e0!3m2!1sen!2sng!4v1766835727350!5m2!1sen!2sng"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="WellOPT Nigeria Location"
+                title="WellOPT Nigeria Ltd"
               ></iframe>
             </div>
           </div>

@@ -84,33 +84,37 @@ const BHPSurvey = () => {
         {/* Equipment & Technology */}
         <section className="section-padding">
           <div className="container-custom">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-                  EQUIPMENT & TECHNOLOGY
-                </h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  We deploy the industry-leading Electronic Quartz Gauge, a rugged and reliable
-                  sensor developed for critical well testing. It is renowned for its high accuracy
-                  and low power consumption.
-                </p>
-              </div>
-              <div className="grid grid-cols-3 gap-4">
-                <img
-                  src={bhpEquipment1}
-                  alt="BHP Survey equipment kit"
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-                <img
-                  src={bhpEquipment2}
-                  alt="Gauge equipment case"
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-                <img
-                  src={bhpEquipment3}
-                  alt="Field technician"
-                  className="w-full h-48 object-cover rounded-lg"
-                />
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                EQUIPMENT & TECHNOLOGY
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-4xl">
+                We deploy the industry-leading Electronic Quartz Gauge, a rugged and reliable
+                sensor developed for critical well testing. It is renowned for its high accuracy
+                and low power consumption.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="rounded-lg overflow-hidden">
+                  <img
+                    src={bhpEquipment1}
+                    alt="BHP Survey equipment kit"
+                    className="w-full h-80 object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                  <img
+                    src={bhpEquipment2}
+                    alt="Gauge equipment case"
+                    className="w-full h-80 object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                  <img
+                    src={bhpEquipment3}
+                    alt="Field technician"
+                    className="w-full h-80 object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>

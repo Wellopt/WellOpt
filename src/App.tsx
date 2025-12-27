@@ -12,6 +12,7 @@ import BHPSurvey from "./pages/services/BHPSurvey";
 import Wellhead from "./pages/services/Wellhead";
 import Marine from "./pages/services/Marine";
 import Contact from "./pages/Contact";
+import ThankYou from "./pages/ThankYou";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/services/wellhead" element={<Wellhead />} />
           <Route path="/services/marine" element={<Marine />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/thank-you" element={<ThankYou />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

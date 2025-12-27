@@ -3,6 +3,9 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Anchor, CheckCircle, TrendingUp, Zap, Database, Wrench } from "lucide-react";
 import slicklineCard from "@/assets/slickline-card.png";
+import marine1 from "@/assets/Marine 1.png";
+import marine2 from "@/assets/Marine 2.png";
+import marine3 from "@/assets/Marine 3.png";
 
 const Marine = () => {
   const capabilities = [
@@ -85,54 +88,68 @@ const Marine = () => {
         {/* Equipment & Technology */}
         <section className="section-padding">
           <div className="container-custom">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
-                  EQUIPMENT & TECHNOLOGY
-                </h2>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Our marine solution, the "M.V. OPRAL BENSON," is a robust, purpose-built
-                  slickline barge with impressive capabilities:
-                </p>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent font-bold">•</span>
-                    <span>Vessel Name: M.V. OPRAL BENSON</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent font-bold">•</span>
-                    <span>Type: Self-Propelled Swamp Barge</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent font-bold">•</span>
-                    <span>Dimensions: 75 ft long x 25 ft wide</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent font-bold">•</span>
-                    <span>Engines: Twin GM 673 (2x228HP) main engines</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent font-bold">•</span>
-                    <span>
-                      On-Board Crane: A telescopic boom crane (10,000lbs at 50ft) for safe and
-                      efficient rig-up
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-accent font-bold">•</span>
-                    <span>
-                      Self-Sufficient: Features full accommodation for 21 people, a 5,000-gallon
-                      fuel tank, and a 5,000-gallon water tank for extended operations
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=600&q=80"
-                  alt="Marine barge"
-                  className="w-full h-80 object-cover rounded-lg"
-                />
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">
+                EQUIPMENT & TECHNOLOGY
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4 max-w-4xl">
+                Our marine solution, the "M.V. OPRAL BENSON," is a robust, purpose-built
+                slickline barge with impressive capabilities:
+              </p>
+              <ul className="space-y-3 text-muted-foreground mb-8 max-w-4xl">
+                <li className="flex items-start gap-2">
+                  <span className="text-accent font-bold">•</span>
+                  <span>Vessel Name: M.V. OPRAL BENSON</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent font-bold">•</span>
+                  <span>Type: Self-Propelled Swamp Barge</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent font-bold">•</span>
+                  <span>Dimensions: 75 ft long x 25 ft wide</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent font-bold">•</span>
+                  <span>Engines: Twin GM 673 (2x228HP) main engines</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent font-bold">•</span>
+                  <span>
+                    On-Board Crane: A telescopic boom crane (10,000lbs at 50ft) for safe and
+                    efficient rig-up
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent font-bold">•</span>
+                  <span>
+                    Self-Sufficient: Features full accommodation for 21 people, a 5,000-gallon
+                    fuel tank, and a 5,000-gallon water tank for extended operations
+                  </span>
+                </li>
+              </ul>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="rounded-lg overflow-hidden">
+                  <img
+                    src={marine1}
+                    alt="Marine barge equipment"
+                    className="w-full h-80 object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                  <img
+                    src={marine2}
+                    alt="Marine operations"
+                    className="w-full h-80 object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                  <img
+                    src={marine3}
+                    alt="Marine vessel"
+                    className="w-full h-80 object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
