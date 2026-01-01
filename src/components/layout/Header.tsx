@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
-import navLogo from "@/assets/nav-logo.png";
+import navLogo from "@/assets/WELLOPT LOGO PNG.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -141,14 +141,14 @@ const Header = () => {
             <nav className="flex flex-col items-center pt-8 gap-6">
               <Link
                 to="/"
-                className="text-white text-lg font-medium"
+                className="text-white text-lg font-medium transition-colors hover:text-accent"
                 onClick={closeMenu}
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className="text-white text-lg font-medium"
+                className="text-white text-lg font-medium transition-colors hover:text-accent"
                 onClick={closeMenu}
               >
                 About Us
@@ -158,7 +158,7 @@ const Header = () => {
               <div className="flex flex-col items-center">
                 <button
                   onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                  className="flex items-center gap-2 text-white text-lg font-medium"
+                  className="flex items-center gap-2 text-white text-lg font-medium transition-colors hover:text-accent"
                 >
                   Services
                   {isMobileServicesOpen ? (
@@ -173,7 +173,7 @@ const Header = () => {
                       <Link
                         key={service.path}
                         to={service.path}
-                        className="text-white text-base"
+                        className="text-white text-base transition-colors hover:text-accent"
                         onClick={closeMenu}
                       >
                         {service.name}
@@ -185,15 +185,15 @@ const Header = () => {
 
               <Link
                 to="/hse"
-                className="text-white text-lg font-medium"
+                className="text-white text-lg font-medium transition-colors hover:text-accent"
                 onClick={closeMenu}
               >
-                Hse
+                HSE
               </Link>
 
               <Link
                 to="/contact"
-                className="bg-accent text-accent-foreground px-8 py-3 rounded font-semibold mt-4"
+                className="bg-accent text-accent-foreground px-8 py-3 rounded font-semibold mt-4 hover:bg-orange-hover transition-colors"
                 onClick={closeMenu}
               >
                 Contact Us

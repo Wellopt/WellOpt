@@ -1,8 +1,15 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import HeroSlider from "@/components/HeroSlider";
 import { CheckCircle } from "lucide-react";
 import safetyTeam from "@/assets/safety-team.png";
 import safetyTrackRecord from "@/assets/safety-track-record.jpg";
+import hseSlide1 from "@/assets/Slide 1 HSE.jpg";
+import hseSlide2 from "@/assets/Slide 2 HSE.png";
+import hseSlide3 from "@/assets/Slide 3 HSE.png";
+import hseSlide4 from "@/assets/Slide 4 HSE.jpg";
+
+const hseImages = [hseSlide1, hseSlide2, hseSlide3, hseSlide4];
 
 const stats = [
   { value: "100%", label: "Compliance with NUPRC & NCDMB Regulations" },
@@ -16,24 +23,22 @@ const HSE = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-[40vh] md:h-[50vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('${safetyTeam}')`,
-          }}
-        >
-          <div className="absolute inset-0 bg-[#002D46CC]"></div>
-        </div>
-        <div className="container-custom relative z-10">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-            Safety is Our Foundation
-          </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-xl">
-            We are committed to protecting our people, the environment, and the integrity of our operations.
-          </p>
-        </div>
-      </section>
+      <HeroSlider 
+        images={hseImages} 
+        interval={5000}
+        overlayClass="bg-[#002D46CC]"
+      >
+        <section className="relative h-[40vh] md:h-[50vh] flex items-center">
+          <div className="container-custom relative z-10">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in">
+              Safety is Our Foundation
+            </h1>
+            <p className="text-lg md:text-xl text-gray-200 max-w-xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
+              We are committed to protecting our people, the environment, and the integrity of our operations.
+            </p>
+          </div>
+        </section>
+      </HeroSlider>
 
       {/* HSE Commitment */}
       <section className="py-16 md:py-24 bg-background">

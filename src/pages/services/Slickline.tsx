@@ -3,11 +3,11 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { Settings, CheckCircle, TrendingUp, Search, ShieldCheck, Zap, Layers, Menu } from "lucide-react";
 import slicklineCard from "@/assets/slickline-card.png";
-import equipment1 from "@/assets/equipment-1.png";
-import equipment2 from "@/assets/equipment-2.png";
-import equipment3 from "@/assets/equipment-3.png";
-import equipment4 from "@/assets/equipment-4.png";
-import equipment5 from "@/assets/equipment-5.png";
+import equipment1 from "@/assets/equipment-1.jpg";
+import equipment2 from "@/assets/equipment-2.jpg";
+import equipment3 from "@/assets/equipment-3.jpg";
+import equipment4 from "@/assets/equipment-4.jpg";
+import equipment5 from "@/assets/equipment-5.jpg";
 
 const Slickline = () => {
   const capabilities = [
