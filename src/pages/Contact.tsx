@@ -204,18 +204,11 @@ const Contact = () => {
                     <h3 className="text-xl font-bold text-accent mb-4">Call Us</h3>
                     <div className="space-y-2">
                       <a
-                        href="tel:+2348034070680"
+                        href="tel:+2348139441557"
                         className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors"
                       >
                         <Phone className="w-4 h-4" />
-                        +234 803 407 0680
-                      </a>
-                      <a
-                        href="tel:+2348034070385"
-                        className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors"
-                      >
-                        <Phone className="w-4 h-4" />
-                        +234 803 407 0385
+                        +234 813 944 1557
                       </a>
                     </div>
                   </div>

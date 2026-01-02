@@ -5,7 +5,6 @@ import { Gauge, FlaskConical, TrendingUp, Activity, Grid3X3, Target } from "luci
 import bhpCard from "@/assets/bhp-card.png";
 import bhpEquipment1 from "@/assets/bhp-equipment-1.png";
 import bhpEquipment2 from "@/assets/bhp-equipment-2.png";
-import bhpEquipment3 from "@/assets/bhp-equipment-3.png";
 
 const BHPSurvey = () => {
   const applications = [
@@ -105,13 +104,6 @@ const BHPSurvey = () => {
                   <img
                     src={bhpEquipment2}
                     alt="Gauge equipment case"
-                    className="w-full h-80 object-cover"
-                  />
-                </div>
-                <div className="rounded-lg overflow-hidden">
-                  <img
-                    src={bhpEquipment3}
-                    alt="Field technician"
                     className="w-full h-80 object-cover"
                   />
                 </div>

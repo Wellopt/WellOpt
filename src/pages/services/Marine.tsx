@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import HeroSlider from "@/components/HeroSlider";
 import { Anchor, CheckCircle, TrendingUp, Zap, Database, Wrench } from "lucide-react";
-import slicklineCard from "@/assets/slickline-card.png";
+import marineSlide1 from "@/assets/Marine Slide 1.jpg";
+import marineSlide2 from "@/assets/Marine Slide 2.png";
 import marine1 from "@/assets/Marine 1.png";
 import marine2 from "@/assets/Marine 2.png";
-import marine3 from "@/assets/Marine 3.png";
+
 
 const Marine = () => {
   const capabilities = [
@@ -23,28 +25,26 @@ const Marine = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[50vh] md:h-[60vh] flex items-center">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url('${slicklineCard}')`,
-            }}
-          >
-            <div className="absolute inset-0 bg-[#002D46CC]"></div>
-          </div>
-          <div className="container-custom relative z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Marine Operations
-              <span className="block text-2xl md:text-3xl font-normal mt-2">
-                (Slickline Barge)
-              </span>
-            </h1>
-            <p className="text-lg md:text-xl text-gray-200 max-w-xl">
-              Extending our expert slickline capabilities to offshore, swamp, and inland
-              waterways with our fully-equipped, self-propelled barge.
-            </p>
-          </div>
-        </section>
+        <HeroSlider 
+          images={[marineSlide1, marineSlide2]} 
+          interval={5000}
+          overlayClass="bg-[#002D46CC]"
+        >
+          <section className="relative h-[50vh] md:h-[60vh] flex items-center">
+            <div className="container-custom relative z-10">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                Marine Operations
+                <span className="block text-2xl md:text-3xl font-normal mt-2">
+                  (Slickline Barge)
+                </span>
+              </h1>
+              <p className="text-lg md:text-xl text-gray-200 max-w-xl">
+                Extending our expert slickline capabilities to offshore, swamp, and inland
+                waterways with our fully-equipped, self-propelled barge.
+              </p>
+            </div>
+          </section>
+        </HeroSlider>
 
         {/* Overview */}
         <section className="section-padding">
@@ -143,13 +143,7 @@ const Marine = () => {
                     className="w-full h-80 object-cover"
                   />
                 </div>
-                <div className="rounded-lg overflow-hidden">
-                  <img
-                    src={marine3}
-                    alt="Marine vessel"
-                    className="w-full h-80 object-cover"
-                  />
-                </div>
+               
               </div>
             </div>
           </div>
