@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Hero from "../Hero";
 import { Gauge, FlaskConical, TrendingUp, Activity, Grid3X3, Target } from "lucide-react";
-import bhpCard from "@/assets/bhp-card.png";
+import bhpCard from "@/assets/bhp.jpg";
 import bhpEquipment1 from "@/assets/bhp-equipment-1.png";
 import bhpEquipment2 from "@/assets/bhp-equipment-2.png";
 
@@ -22,25 +23,11 @@ const BHPSurvey = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[50vh] md:h-[60vh] flex items-center">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url('${bhpCard}')`,
-            }}
-          >
-            <div className="absolute inset-0 bg-[#002D46CC]"></div>
-          </div>
-          <div className="container-custom relative z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              BHP Survey
-            </h1>
-            <p className="text-lg md:text-xl text-gray-200 max-w-xl">
-              Capturing high-precision downhole pressure and temperature data to provide
-              critical insights for reservoir analysis and production optimization.
-            </p>
-          </div>
-        </section>
+        <Hero
+          title="BHP Survey"
+          subtitle="Capturing high-precision downhole pressure and temperature data to provide critical insights for reservoir analysis and production optimization."
+          images={[bhpCard]}
+        />
 
         {/* Overview */}
         <section className="section-padding">
@@ -92,7 +79,7 @@ const BHPSurvey = () => {
                 sensor developed for critical well testing. It is renowned for its high accuracy
                 and low power consumption.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="rounded-lg overflow-hidden">
                   <img
                     src={bhpEquipment1}

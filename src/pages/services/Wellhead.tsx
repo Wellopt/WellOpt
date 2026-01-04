@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Hero from "@/pages/Hero";
 import { Wrench, AlertTriangle, Activity, Settings, Search, RefreshCw } from "lucide-react";
-import wellheadCard from "@/assets/wellhead-card.png";
+import wellheadCard from "@/assets/wellhead-card.jpg";
 import wellheadEquipment1 from "@/assets/wellhead-equipment-1.png";
 import wellheadEquipment2 from "@/assets/wellhead-equipment-2.png";
 import wellheadEquipment3 from "@/assets/wellhead-equipment-3.png";
@@ -23,25 +24,11 @@ const Wellhead = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[50vh] md:h-[60vh] flex items-center">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url('${wellheadCard}')`,
-            }}
-          >
-            <div className="absolute inset-0 bg-[#002D46CC]"></div>
-          </div>
-          <div className="container-custom relative z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Wellhead Maintenance
-            </h1>
-            <p className="text-lg md:text-xl text-gray-200 max-w-xl">
-              Providing comprehensive First-Line wellhead maintenance to ensure the safety,
-              integrity, and operational readiness of your surface equipment.
-            </p>
-          </div>
-        </section>
+        <Hero
+          title="Wellhead Maintenance"
+          subtitle="Providing comprehensive First-Line wellhead maintenance to ensure the safety, integrity, and operational readiness of your surface equipment."
+          images={[wellheadCard]}
+        />
 
         {/* Overview */}
         <section className="section-padding">

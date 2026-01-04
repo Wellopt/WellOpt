@@ -1,6 +1,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import HeroSlider from "@/components/HeroSlider";
+import Hero from "./Hero";
 import { CheckCircle } from "lucide-react";
 import safetyTeam from "@/assets/safety-team.png";
 import safetyTrackRecord from "@/assets/safety-track-record.jpg";
@@ -23,22 +23,11 @@ const HSE = () => {
       <Header />
       
       {/* Hero Section */}
-      <HeroSlider 
+      <Hero
+        title="Safety is Our Foundation"
+        subtitle="We are committed to protecting our people, the environment, and the integrity of our operations."
         images={hseImages} 
-        interval={5000}
-        overlayClass="bg-[#002D46CC]"
-      >
-        <section className="relative h-[40vh] md:h-[50vh] flex items-center">
-          <div className="container-custom relative z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 animate-fade-in">
-              Safety is Our Foundation
-            </h1>
-            <p className="text-lg md:text-xl text-gray-200 max-w-xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              We are committed to protecting our people, the environment, and the integrity of our operations.
-            </p>
-          </div>
-        </section>
-      </HeroSlider>
+      />
 
       {/* HSE Commitment */}
       <section className="py-16 md:py-24 bg-background">

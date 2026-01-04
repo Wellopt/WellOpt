@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import HeroSlider from "@/components/HeroSlider";
+import Hero from "../Hero";
 import { Anchor, CheckCircle, TrendingUp, Zap, Database, Wrench } from "lucide-react";
 import marineSlide1 from "@/assets/Marine Slide 1.jpg";
 import marineSlide2 from "@/assets/Marine Slide 2.png";
@@ -25,26 +25,11 @@ const Marine = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <HeroSlider 
-          images={[marineSlide1, marineSlide2]} 
-          interval={5000}
-          overlayClass="bg-[#002D46CC]"
-        >
-          <section className="relative h-[50vh] md:h-[60vh] flex items-center">
-            <div className="container-custom relative z-10">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-                Marine Operations
-                <span className="block text-2xl md:text-3xl font-normal mt-2">
-                  (Slickline Barge)
-                </span>
-              </h1>
-              <p className="text-lg md:text-xl text-gray-200 max-w-xl">
-                Extending our expert slickline capabilities to offshore, swamp, and inland
-                waterways with our fully-equipped, self-propelled barge.
-              </p>
-            </div>
-          </section>
-        </HeroSlider>
+        <Hero
+          title={<>Marine Operations<br />(Slickline Barge)</>}
+          subtitle="Extending our expert slickline capabilities to offshore, swamp, and inland waterways with our fully-equipped, self-propelled barge."
+          images={[marineSlide1, marineSlide2]}
+        />
 
         {/* Overview */}
         <section className="section-padding">
@@ -128,7 +113,7 @@ const Marine = () => {
                   </span>
                 </li>
               </ul>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="rounded-lg overflow-hidden">
                   <img
                     src={marine1}

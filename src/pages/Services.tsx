@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import coreServices from "@/assets/core-services.png";
-import slicklineCard from "@/assets/slickline-card.png";
-import bhpCard from "@/assets/bhp-card.png";
+import Hero from "./Hero"
+import coreServices from "@/assets/bhp-card.jpeg";
+import slicklineCard from "@/assets/equipment-3.jpg";
+import slicklineCard2 from "@/assets/hero-marine.png";
+import bhpCard from "@/assets/bhp-card.jpeg";
 import bhpHover from "@/assets/bhp-hover.png";
 import wellheadCard from "@/assets/wellhead-card.png";
-import wellheadHover from "@/assets/wellhead-hover.png";
+import wellheadHover from "@/assets/wellhead-card.jpg";
 import marineHover from "@/assets/marine-hover.png";
+import heroEquipment from "@/assets/hero-equipment.png";
+import wellheadEquipment1 from "@/assets/wellhead-equipment-1.png";
 
 const Services = () => {
   const services = [
@@ -15,7 +19,7 @@ const Services = () => {
       title: "Slickline (Land/Swamp)",
       description: "Delivering a full range of slickline services for land and swamp operations...",
       path: "/services/slickline",
-      image: slicklineCard,
+      image: heroEquipment,
       hoverImage: slicklineCard,
     },
     {
@@ -29,14 +33,14 @@ const Services = () => {
       title: "Wellhead Maintenance",
       description: "Providing comprehensive wellhead maintenance to ensure safety...",
       path: "/services/wellhead",
-      image: wellheadCard,
+      image: wellheadEquipment1,
       hoverImage: wellheadHover,
     },
     {
       title: "Marine (Slickline Barge)",
       description: "Extending our slickline capabilities to offshore etc with our fully ready barge...",
       path: "/services/marine",
-      image: slicklineCard,
+      image: slicklineCard2,
       hoverImage: marineHover,
     },
   ];
@@ -47,25 +51,11 @@ const Services = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[40vh] md:h-[50vh] flex items-center">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('${coreServices}')`,
-          }}
-          >
-            <div className="absolute inset-0 bg-[#002D46CC]"></div>
-          </div>
-          <div className="container-custom relative z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Our Core Services
-            </h1>
-            <p className="text-lg md:text-xl text-gray-200 max-w-xl">
-              Delivering precision, safety, and efficiency across land, swamp, and offshore
-              operations in Nigeria.
-            </p>
-          </div>
-        </section>
+        <Hero
+          title="Our Core Services"
+          subtitle="Delivering precision, safety, and efficiency across land, swamp, and offshore operations in Nigeria."
+          backgroundImage={coreServices}
+        />
 
         {/* Services Grid */}
         <section className="section-padding">

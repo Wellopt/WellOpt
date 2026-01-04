@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Hero from "./Hero";
 import aboutHero from "@/assets/about-hero.png";
 import companyOverview from "@/assets/company-overview.png";
 import ourVision from "@/assets/our-vision.png";
@@ -11,24 +12,11 @@ const About = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative h-[40vh] md:h-[50vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('${aboutHero}')`,
-          }}
-        >
-          <div className="absolute inset-0 bg-[#002D46CC]"></div>
-        </div>
-        <div className="container-custom relative z-10">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-            Who We Are
-          </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-xl">
-            Meet the trusted, indigenous partner and expert team committed to Nigerian well service excellence.
-          </p>
-        </div>
-      </section>
+      <Hero
+        title="Who We Are"
+        subtitle="Meet the trusted, indigenous partner and expert team committed to Nigerian well service excellence."
+        backgroundImage={aboutHero}
+      />
 
       {/* Company Overview */}
       <section className="py-16 md:py-24 bg-background">

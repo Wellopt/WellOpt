@@ -49,7 +49,7 @@ const Index = () => {
       <HeroSlider 
         images={heroImages} 
         interval={5000}
-        overlayClass="bg-gradient-to-r from-navy/95 to-navy/60"
+        overlayClass="bg-navy/40"
       >
         <section className="min-h-[500px] md:min-h-[600px] flex items-center">
           <div className="container-custom py-16 md:py-24">

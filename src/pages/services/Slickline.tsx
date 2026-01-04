@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Hero from "../Hero";
 import { Settings, CheckCircle, TrendingUp, Search, ShieldCheck, Zap, Layers, Menu } from "lucide-react";
 import slicklineCard from "@/assets/slickline-card.png";
 import equipment1 from "@/assets/equipment-1.jpg";
@@ -27,25 +28,11 @@ const Slickline = () => {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[50vh] md:h-[60vh] flex items-center">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url('${slicklineCard}')`,
-            }}
-          >
-            <div className="absolute inset-0 bg-[#002D46CC]"></div>
-          </div>
-          <div className="container-custom relative z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-              Slickline Services
-            </h1>
-            <p className="text-lg md:text-xl text-gray-200 max-w-xl">
-              Delivering a full range of slickline services for land and swamp operations to
-              ensure optimal well performance and integrity.
-            </p>
-          </div>
-        </section>
+        <Hero
+          title="Slickline Services"
+          subtitle="Delivering a full range of slickline services for land and swamp operations to ensure optimal well performance and integrity."
+          images={[slicklineCard]}
+        />
 
         {/* Overview */}
         <section className="section-padding">
