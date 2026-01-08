@@ -4,6 +4,8 @@ import Footer from "@/components/layout/Footer";
 import Hero from "../Hero";
 import { Settings, CheckCircle, TrendingUp, Search, ShieldCheck, Zap, Layers, Menu } from "lucide-react";
 import slicklineCard from "@/assets/slickline-card.png";
+import sicklineSlide2 from "@/assets/sickline slide 2.png";
+import sicklineSlide3 from "@/assets/sickline slide 3.png";
 import equipment1 from "@/assets/equipment-1.jpg";
 import equipment2 from "@/assets/equipment-2.jpg";
 import equipment3 from "@/assets/equipment-3.jpg";
@@ -31,7 +33,7 @@ const Slickline = () => {
         <Hero
           title="Slickline Services"
           subtitle="Delivering a full range of slickline services for land and swamp operations to ensure optimal well performance and integrity."
-          images={[slicklineCard, equipment1, equipment2, equipment3, equipment4, equipment5]}
+          images={[slicklineCard, sicklineSlide2, sicklineSlide3]}
         />
 
         {/* Overview */}
