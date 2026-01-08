@@ -31,7 +31,7 @@ const Slickline = () => {
         <Hero
           title="Slickline Services"
           subtitle="Delivering a full range of slickline services for land and swamp operations to ensure optimal well performance and integrity."
-          images={[slicklineCard]}
+          images={[slicklineCard, equipment1, equipment2, equipment3, equipment4, equipment5]}
         />
 
         {/* Overview */}

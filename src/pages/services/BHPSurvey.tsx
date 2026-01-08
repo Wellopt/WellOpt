@@ -26,7 +26,7 @@ const BHPSurvey = () => {
         <Hero
           title="BHP Survey"
           subtitle="Capturing high-precision downhole pressure and temperature data to provide critical insights for reservoir analysis and production optimization."
-          images={[bhpCard]}
+          images={[bhpCard, bhpEquipment1, bhpEquipment2]}
         />
 
         {/* Overview */}

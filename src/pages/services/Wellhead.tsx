@@ -27,7 +27,7 @@ const Wellhead = () => {
         <Hero
           title="Wellhead Maintenance"
           subtitle="Providing comprehensive First-Line wellhead maintenance to ensure the safety, integrity, and operational readiness of your surface equipment."
-          images={[wellheadCard]}
+          images={[wellheadCard, wellheadEquipment1, wellheadEquipment2, wellheadEquipment3]}
         />
 
         {/* Overview */}

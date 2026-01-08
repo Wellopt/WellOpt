@@ -135,8 +135,8 @@ const Footer = ({ showCTA = true }: FooterProps) => {
             <ul className="space-y-3 text-sm text-gray-400">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-white" />
-                <a href="mailto:welloptw@wellopt.com" className="hover:text-accent transition-colors">
-                  welloptw@wellopt.com
+                <a href="mailto:welloptwl@wellopt.com" className="hover:text-accent transition-colors">
+                  welloptwl@wellopt.com
                 </a>
               </li>
               <li className="flex items-center gap-2">

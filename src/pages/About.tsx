@@ -3,6 +3,8 @@ import Footer from "@/components/layout/Footer";
 import Hero from "./Hero";
 import aboutHero from "@/assets/about-hero.png";
 import companyOverview from "@/assets/company-overview.png";
+import heroTeam from "@/assets/hero-team.png";
+import heroOffice from "@/assets/hero-office.png";
 import ourVision from "@/assets/our-vision.png";
 import ourClients from "@/assets/our-clients.png";
 
@@ -15,7 +17,7 @@ const About = () => {
       <Hero
         title="Who We Are"
         subtitle="Meet the trusted, indigenous partner and expert team committed to Nigerian well service excellence."
-        backgroundImage={aboutHero}
+        images={[aboutHero, heroTeam, heroOffice]}
       />
 
       {/* Company Overview */}
