@@ -63,7 +63,7 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-accent mb-6">
             Our Vision
           </h2>
-          <p className="text-gray-300 max-w-3xl mx-auto">
+          <p className="text-[#FFFFFF] max-w-3xl mx-auto">
             Our vision is to deliver world-class Well Services operations that set the benchmark for excellence in the oil and gas industry. We are driven by an unwavering determination to create lasting value, ensuring the satisfaction of our customers, the growth and fulfillment of our employees, and the sustained returns for our shareholders.
           </p>
         </div>

@@ -36,14 +36,7 @@ const Marine = () => {
           <div className="container-custom">
             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">OVERVIEW</h2>
             <p className="text-muted-foreground leading-relaxed max-w-4xl">
-              At WellOPT, we provide comprehensive slickline services for swamp and offshore
-              locations with our dedicated slickline barge, the "M.V. OPRAL BENSON." This
-              self-propelled vessel allows for rapid deployment and efficient operations without
-              the need for a tug, capable of working in water depths from 3ft to 20ft. It is a
-              fully self-sufficient operational base, complete with on-board accommodation for 21
-              people and a hydraulic crane, allowing our expert crews to perform complex well
-              interventions safely and efficiently, all while adhering strictly to our HSE policy
-              and all NUPRC regulations.
+       At WellOPT, we provide comprehensive slickline services for swamp and offshore locations with our dedicated slickline barge, the "M.V. OPRAL BENSON". This self-propelled vessel allows for rapid deployment and efficient operations without the need for a tug, capable of working in water depths from 3ft to 20ft. It is a fully self-sufficient operational base, complete with on-board accommodation for 18 people and a hydraulic crane, allowing our expert crews to perform complex well interventions safely and efficiently, all while adhering strictly to our HSE policy and all NUPRC regulations.
             </p>
           </div>
         </section>
@@ -142,7 +135,7 @@ const Marine = () => {
             </h2>
             <Link
               to="/contact"
-              className="inline-flex border-2 border-accent text-accent px-8 py-3 rounded font-semibold hover:bg-accent hover:text-white transition-colors"
+              className="inline-flex border-2 border-accent text-accent px-8 py-3 rounded-full font-semibold hover:bg-accent hover:text-white transition-colors"
             >
               Contact Us
             </Link>

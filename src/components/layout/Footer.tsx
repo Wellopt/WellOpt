@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Mail, Phone } from "lucide-react";
 import footerLogo from "@/assets/footer-logo.png";
 import workerBanner from "@/assets/worker-banner.png";
+import certifiedLogo from "@/assets/certified-logo.png";
 
 interface FooterProps {
   showCTA?: boolean;
@@ -146,6 +147,9 @@ const Footer = ({ showCTA = true }: FooterProps) => {
                 </a>
               </li>
             </ul>
+            <div className="mt-4">
+              <img src={certifiedLogo} alt="Certified" className="w-10 h-10" />
+            </div>
           </div>
         </div>
       </div>

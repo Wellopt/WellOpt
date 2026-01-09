@@ -27,7 +27,7 @@ const ThankYou = () => {
           <div className="pt-8">
             <Link
               to="/"
-              className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-accent hover:bg-accent/90 md:py-4 md:text-lg md:px-10 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-accent hover:bg-accent/90 md:py-4 md:text-lg md:px-10 transition-colors"
             >
               Back to homepage
             </Link>

@@ -138,7 +138,7 @@ const Slickline = () => {
             </h2>
             <Link
               to="/contact"
-              className="inline-flex border-2 border-accent text-accent px-8 py-3 rounded font-semibold hover:bg-accent hover:text-white transition-colors"
+              className="inline-flex border-2 border-accent text-accent px-8 py-3 rounded-full font-semibold hover:bg-accent hover:text-white transition-colors"
             >
               Contact Us
             </Link>
