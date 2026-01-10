@@ -72,12 +72,16 @@ const Services = () => {
                     src={service.image}
                     alt={service.title}
                     className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+                    loading="lazy"
+                    decoding="async"
                   />
                   {/* Hover Image */}
                   <img
                     src={service.hoverImage}
                     alt={service.title}
                     className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
                   />
                   
                   {/* Dark overlay on the whole card - stays same color on hover */}

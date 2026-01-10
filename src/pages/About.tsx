@@ -43,6 +43,8 @@ const About = () => {
                 src={companyOverview} 
                 alt="WellOPT company building" 
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -110,6 +112,8 @@ const About = () => {
               src={ourClients} 
               alt="Our trusted clients including Renaissance, Eni, Seplat, Heirs Energies, Chorus, Belemaoil, Waltersmith, and Universal Energy" 
               className="max-w-full h-auto"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

@@ -33,7 +33,7 @@ const services = [
   {
     icon: Ship,
     title: "Marine (Slickline Barge)",
-    description: "Extending our slickline capabilities to offshore and inland waterways with our fully equipped slickline barge...",
+    description: "Extending our slickline capabilities to inland waterways with our fully equipped slickline barge...",
     link: "/services/marine",
   },
 ];
@@ -63,13 +63,13 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
                 <Link
                   to="/contact"
-                  className="bg-accent text-accent-foreground px-8 py-3 rounded-full font-semibold hover:bg-orange-hover transition-colors text-center"
+                  className="bg-accent text-accent-foreground px-8 py-3 rounded-lg font-semibold hover:bg-orange-hover transition-colors text-center"
                 >
                   Request a Quote
                 </Link>
                 <Link
                   to="/services"
-                  className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-navy transition-colors text-center"
+                  className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-navy transition-colors text-center"
                 >
                   Explore our Services
                 </Link>
@@ -117,6 +117,8 @@ const Index = () => {
                 src={expertPartner} 
                 alt="WellOPT expert team member" 
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div>
@@ -169,6 +171,8 @@ const Index = () => {
                 src={teamDiscussion} 
                 alt="WellOPT safety commitment" 
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
