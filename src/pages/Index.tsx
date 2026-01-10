@@ -4,12 +4,12 @@ import Footer from "@/components/layout/Footer";
 import ClientLogos from "@/components/sections/ClientLogos";
 import HeroSlider from "@/components/HeroSlider";
 import { Settings, TrendingUp, Wrench, Ship } from "lucide-react";
-import heroOffice from "@/assets/hero-office.png";
-import heroTeam from "@/assets/hero-team.png";
-import heroMarine from "@/assets/hero-marine.png";
-import heroEquipment from "@/assets/hero-equipment.png";
-import expertPartner from "@/assets/expert-partner.png";
-import teamDiscussion from "@/assets/team-discussion.jpg";
+import heroOffice from "@/assets/hero-office.webp";
+import heroTeam from "@/assets/hero-team.webp";
+import heroMarine from "@/assets/hero-marine.webp";
+import heroEquipment from "@/assets/hero-equipment.webp";
+import expertPartner from "@/assets/expert-partner.webp";
+import teamDiscussion from "@/assets/team-discussion.webp";
 
 const services = [
   {

@@ -1,12 +1,12 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "./Hero";
-import aboutHero from "@/assets/about-hero.png";
-import companyOverview from "@/assets/company-overview.png";
-import heroTeam from "@/assets/hero-team.png";
-import heroOffice from "@/assets/hero-office.png";
-import ourVision from "@/assets/our-vision.png";
-import ourClients from "@/assets/our-clients.png";
+import aboutHero from "@/assets/about-hero.webp";
+import companyOverview from "@/assets/company-overview.webp";
+import heroTeam from "@/assets/hero-team.webp";
+import heroOffice from "@/assets/hero-office.webp";
+import ourVision from "@/assets/our-vision.webp";
+import ourClients from "@/assets/our-clients.webp";
 
 const About = () => {
   return (

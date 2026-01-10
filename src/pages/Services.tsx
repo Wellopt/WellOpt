@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "./Hero"
-import coreServices from "@/assets/bhp-card.jpeg";
-import slicklineCard from "@/assets/equipment-3.jpg";
-import slicklineCard2 from "@/assets/hero-marine.png";
-import bhpCard from "@/assets/bhp-card.jpeg";
-import bhpHover from "@/assets/bhp-hover.png";
-import wellheadCard from "@/assets/wellhead-card.png";
-import wellheadHover from "@/assets/wellhead-card.jpg";
-import marineHover from "@/assets/marine-hover.png";
-import heroEquipment from "@/assets/hero-equipment.png";
-import wellheadEquipment1 from "@/assets/wellhead-equipment-1.png";
+import coreServices from "@/assets/bhp-card.webp";
+import slicklineCard from "@/assets/equipment-3.webp";
+import slicklineCard2 from "@/assets/hero-marine.webp";
+import bhpCard from "@/assets/bhp-card.webp";
+import bhpHover from "@/assets/bhp-hover.webp";
+import wellheadCard from "@/assets/wellhead-card.webp";
+import wellheadHover from "@/assets/wellhead-card.webp";
+import marineHover from "@/assets/marine-hover.webp";
+import heroEquipment from "@/assets/hero-equipment.webp";
+import wellheadEquipment1 from "@/assets/wellhead-equipment-1.webp";
 
 const Services = () => {
   const services = [
