@@ -32,13 +32,13 @@ const Hero = ({ title, subtitle, images, backgroundImage }: HeroProps) => {
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <Link
                 to="/contact"
-                className="bg-accent text-accent-foreground px-8 py-3 rounded-full font-semibold hover:bg-orange-hover transition-colors text-center"
+                className="bg-accent text-accent-foreground px-8 py-3 rounded-md font-semibold hover:bg-orange-hover transition-colors text-center"
               >
                 Request a Quote
               </Link>
               <Link
                 to="/services"
-                className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-navy transition-colors text-center"
+                className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-navy transition-colors text-center"
               >
                 Explore our Services
               </Link>
