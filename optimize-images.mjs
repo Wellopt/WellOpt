@@ -4,12 +4,12 @@ import path from 'path';
 import fs from 'fs/promises';
 
 // Usage: node optimize-images.mjs
-// Prerequisites: npm install imagemin imagemin-webp
+// Prerequisites: npm install imagemin imagemin-webp path fs
 
 (async () => {
   console.log('Converting images to WebP in src/assets...');
-  
-  const files = await imagemin(['src/assets/*.{jpg,png,jpeg}'], {
+
+  const files = await imagemin(['src/assets/*.{jpg,JPG,jpeg,JPEG,png,PNG}'], {
     plugins: [
       imageminWebp({ quality: 75 })
     ]
@@ -21,6 +21,9 @@ import fs from 'fs/promises';
     await fs.writeFile(newPath, file.data);
     console.log(`Converted ${parsed.base} -> ${parsed.name}.webp`);
   }
-
-  console.log(`Converted ${files.length} images successfully.`);
+  if (files.length === 0) {
+    console.log('No images found to convert in src/assets.');
+  } else {
+    console.log(`Converted ${files.length} images successfully.`);
+  }
 })();
