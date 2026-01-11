@@ -92,7 +92,7 @@ const Slickline = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="rounded-lg overflow-hidden border border-gray-200">
                   <img
-                    src={equipment1}
+                    src={sicklineSlide2}
                     alt="Slickline equipment"
                     className="w-full h-64 object-contain bg-white"
                   />
@@ -120,7 +120,7 @@ const Slickline = () => {
                 </div>
                 <div className="rounded-lg overflow-hidden md:col-span-2 border border-gray-200">
                   <img
-                    src={equipment5}
+                    src={sicklineSlide3}
                     alt="Slickline machinery"
                     className="w-full h-64 object-contain bg-white"
                   />
