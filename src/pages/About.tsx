@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "./Hero";
@@ -9,6 +10,10 @@ import ourVision from "@/assets/our-vision.webp";
 import ourClients from "@/assets/our-clients.webp";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "WellOPT / About Us";
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -29,13 +34,13 @@ const About = () => {
                 Company Overview
               </h2>
               <p className="text-muted-foreground mb-4">
-                WellOPT is a wholly indigenous Nigerian Well Services company, registered with the CAC and NUPRC since 2006, and fully compliant with NIPEX and NCDMB requirements.
+                WellOPT is a wholly indigenous Nigerian Well Services company, registered with the CAC and NUPRC since 2006, and fully compliant with NIPEX and NCDMB requirements as well as ISO 9001:2015 certified.
               </p>
               <p className="text-muted-foreground mb-4">
                 We specialize in Slickline Operations, Downhole Gauges, and Wellhead Maintenance, delivering safe and efficient solutions across land, swamp, and offshore environments.
               </p>
               <p className="text-muted-foreground">
-                From our purpose-built facilities in Port Harcourt, we have, since 2007, built a strong reputation for quality, reliability, and technical excellence in serving operators across Nigeria's oil and gas sector.
+                From our purpose-built facilities in Port Harcourt, we have since 2007 built a strong reputation for quality, reliability, and technical excellence in serving operators across Nigeria's oil and gas sector.
               </p>
             </div>
             <div className="rounded-lg overflow-hidden aspect-[4/3]">

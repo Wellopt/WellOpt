@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -9,6 +10,10 @@ import wellheadEquipment2 from "@/assets/wellhead-equipment-2.png";
 import wellheadEquipment3 from "@/assets/wellhead-equipment-3.png";
 
 const Wellhead = () => {
+  useEffect(() => {
+    document.title = "WellOPT / Wellhead Maintenance";
+  }, []);
+
   const capabilities = [
     { icon: Wrench, label: "Routine Maintenance" },
     { icon: AlertTriangle, label: "Non-Routine Maintenance" },

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -13,6 +14,10 @@ import equipment4 from "@/assets/equipment-4.jpg";
 import equipment5 from "@/assets/equipment-5.jpg";
 
 const Slickline = () => {
+  useEffect(() => {
+    document.title = "WellOPT / Slickline Services";
+  }, []);
+
   const capabilities = [
     { icon: Settings, label: "Precision Operations" },
     { icon: CheckCircle, label: "Wellbore Integrity" },

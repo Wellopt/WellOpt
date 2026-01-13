@@ -100,7 +100,7 @@ const Header = () => {
             {/* CTA Button */}
             <Link
               to="/contact"
-              className="hidden md:inline-flex bg-accent text-accent-foreground px-6 py-2.5 rounded-full font-semibold hover:bg-orange-hover transition-colors"
+              className="hidden md:inline-flex bg-accent text-accent-foreground px-6 py-2.5 rounded-md font-semibold hover:bg-orange-hover transition-colors"
             >
               Contact Us
             </Link>
@@ -193,7 +193,7 @@ const Header = () => {
 
               <Link
                 to="/contact"
-                className="bg-accent text-accent-foreground px-8 py-3 rounded-full font-semibold mt-4 hover:bg-orange-hover transition-colors"
+                className="bg-accent text-accent-foreground px-8 py-3 rounded-md font-semibold mt-4 hover:bg-orange-hover transition-colors"
                 onClick={closeMenu}
               >
                 Contact Us

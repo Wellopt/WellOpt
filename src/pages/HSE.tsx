@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "./Hero";
@@ -18,6 +19,10 @@ const stats = [
 ];
 
 const HSE = () => {
+  useEffect(() => {
+    document.title = "WellOPT / HSE Policy";
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />

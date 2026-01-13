@@ -1,37 +1,41 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ClientLogos from "@/components/sections/ClientLogos";
 import HeroSlider from "@/components/HeroSlider";
-import { Settings, TrendingUp, Wrench, Ship } from "lucide-react";
 import heroOffice from "@/assets/hero-office.webp";
 import heroTeam from "@/assets/hero-team.webp";
 import heroMarine from "@/assets/hero-marine.webp";
 import heroEquipment from "@/assets/hero-equipment.webp";
 import expertPartner from "@/assets/expert-partner.webp";
 import teamDiscussion from "@/assets/team-discussion.webp";
+import icon1 from "@/assets/1.svg";
+import icon2 from "@/assets/2.svg";
+import icon3 from "@/assets/3.svg";
+import icon4 from "@/assets/4.svg";
 
 const services = [
   {
-    icon: Settings,
+    icon: icon1,
     title: "Slickline Services",
     description: "Delivering a full range of slickline services for land and swamp operations...",
     link: "/services/slickline",
   },
   {
-    icon: TrendingUp,
+    icon: icon2,
     title: "BHP Survey",
     description: "Capturing high-precision downhole pressure and temperature data to provide critical insights to well...",
     link: "/services/bhp-survey",
   },
   {
-    icon: Wrench,
+    icon: icon3,
     title: "Wellhead Maintenance",
     description: "Providing comprehensive wellhead maintenance to ensure the safety, integrity, and operational readiness...",
     link: "/services/wellhead",
   },
   {
-    icon: Ship,
+    icon: icon4,
     title: "Marine (Slickline Barge)",
     description: "Extending our slickline capabilities to inland waterways with our fully equipped slickline barge...",
     link: "/services/marine",
@@ -41,6 +45,10 @@ const services = [
 const heroImages = [heroOffice, heroTeam, heroMarine, heroEquipment];
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "WellOPT / Home";
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -92,7 +100,7 @@ const Index = () => {
                 className="bg-background border border-border rounded-sm p-6 pt-0 text-center hover:shadow-lg transition-shadow flex flex-col"
               >
                 <div className="w-16 h-16 mx-auto -mt-8 mb-5 bg-[#002D46] rounded-full flex items-center justify-center">
-                  <service.icon className="w-7 h-7 text-white" strokeWidth={1.5} />
+                  <img src={service.icon} alt={service.title} className="w-8 h-8" />
                 </div>
                 <h3 className="text-base font-bold text-foreground mb-3">{service.title}</h3>
                 <p className="text-sm text-muted-foreground mb-5 leading-relaxed flex-1">{service.description}</p>

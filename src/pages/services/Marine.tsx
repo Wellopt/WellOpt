@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -10,6 +11,10 @@ import marine2 from "@/assets/Marine 2.png";
 
 
 const Marine = () => {
+  useEffect(() => {
+    document.title = "WellOPT / Marine Operations";
+  }, []);
+
   const capabilities = [
     { icon: Anchor, label: "Offshore/Swamp Well Intervention" },
     { icon: CheckCircle, label: "Wellbore Integrity" },
@@ -101,7 +106,7 @@ const Marine = () => {
                 <li className="flex items-start gap-2">
                   <span className="text-accent font-bold">•</span>
                   <span>
-                    Self-Sufficient: Features full accommodation for 21 people, a 5,000-gallon
+                    Self-Sufficient: Features full accommodation for 18 people, a 5,000-gallon
                     fuel tank, and a 5,000-gallon water tank for extended operations
                   </span>
                 </li>

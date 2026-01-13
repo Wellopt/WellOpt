@@ -57,7 +57,7 @@ const Footer = ({ showCTA = true }: FooterProps) => {
             </p>
             <div className="text-sm text-gray-400 mb-4">
               <p className="font-medium text-white">WellOPT Nigeria Ltd</p>
-              <p>76B Obiwell Road, Rumuigbo</p>
+              <p>76B Obi Wali Road, Rumuigbo</p>
               <p>Port Harcourt, Rivers State, Nigeria</p>
             </div>
             <div className="flex gap-2">

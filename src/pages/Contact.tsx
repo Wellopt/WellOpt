@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -8,6 +8,10 @@ import workerBanner from "@/assets/worker-banner.png";
 
 const Contact = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    document.title = "WellOPT / Contact Us";
+  }, []);
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",

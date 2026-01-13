@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -14,6 +15,10 @@ import heroEquipment from "@/assets/hero-equipment.webp";
 import wellheadEquipment1 from "@/assets/wellhead-equipment-1.webp";
 
 const Services = () => {
+  useEffect(() => {
+    document.title = "WellOPT / Services";
+  }, []);
+
   const services = [
     {
       title: "Slickline (Land/Swamp)",
@@ -54,7 +59,7 @@ const Services = () => {
         <Hero
           title="Our Core Services"
           subtitle="Delivering precision, safety, and efficiency across land, swamp, and offshore operations in Nigeria."
-          backgroundImage={coreServices}
+          images={[coreServices, slicklineCard, slicklineCard2, wellheadCard, heroEquipment]}
         />
 
         {/* Services Grid */}

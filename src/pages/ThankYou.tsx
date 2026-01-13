@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { CheckCircle } from "lucide-react";
 
 const ThankYou = () => {
+  useEffect(() => {
+    document.title = "WellOPT / Thank You";
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />

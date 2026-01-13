@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -8,6 +9,10 @@ import bhpEquipment1 from "@/assets/bhp-equipment-1.png";
 import bhpEquipment2 from "@/assets/bhp-equipment-2.png";
 
 const BHPSurvey = () => {
+  useEffect(() => {
+    document.title = "WellOPT / BHP Survey";
+  }, []);
+
   const applications = [
     { icon: FlaskConical, label: "Drill Stem Tests" },
     { icon: TrendingUp, label: "Production Tests" },
