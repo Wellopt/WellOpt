@@ -141,7 +141,7 @@ const Index = () => {
               </p>
               <Link
                 to="/about"
-                className="inline-flex bg-accent text-accent-foreground px-6 py-3 rounded-full font-semibold hover:bg-orange-hover transition-colors"
+                className="inline-flex bg-accent text-accent-foreground px-6 py-3 rounded-md font-semibold hover:bg-orange-hover transition-colors"
               >
                 Learn More
               </Link>
@@ -169,7 +169,7 @@ const Index = () => {
               </p>
               <Link
                 to="/hse"
-                className="inline-flex bg-accent text-accent-foreground px-6 py-3 rounded-full font-semibold hover:bg-orange-hover transition-colors"
+                className="inline-flex bg-accent text-accent-foreground px-6 py-3 rounded-md font-semibold hover:bg-orange-hover transition-colors"
               >
                 Learn More
               </Link>
