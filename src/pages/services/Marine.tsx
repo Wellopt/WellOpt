@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -8,6 +8,12 @@ import marineSlide1 from "@/assets/Marine Slide 1.jpg";
 import marineSlide2 from "@/assets/Marine Slide 2.png";
 import marine1 from "@/assets/Marine 1.png";
 import marine2 from "@/assets/Marine 2.png";
+import DrillDownIcon from "@/assets/marine barge icons/carbon_drill-down.svg";
+import ArrowGrowthIcon from "@/assets/marine barge icons/fluent_arrow-growth-24-filled.svg";
+import DataAreaIcon from "@/assets/marine barge icons/fluent_data-area-32-regular.svg";
+import ProtectIcon from "@/assets/marine barge icons/icon-park-outline_protect.svg";
+import ShipIcon from "@/assets/marine barge icons/ship 1.svg";
+import WrenchIcon from "@/assets/marine barge icons/si_wrench-line.svg";
 
 
 const Marine = () => {
@@ -16,12 +22,12 @@ const Marine = () => {
   }, []);
 
   const capabilities = [
-    { icon: Anchor, label: "Offshore/Swamp Well Intervention" },
-    { icon: CheckCircle, label: "Wellbore Integrity" },
-    { icon: TrendingUp, label: "Production Enhancements" },
-    { icon: Zap, label: "Perforating Operations" },
-    { icon: Database, label: "Full Data Acquisition" },
-    { icon: Wrench, label: "Wellhead Maintenance" },
+    { icon: ShipIcon, label: "Offshore/Swamp Well Intervention" },
+    { icon: DrillDownIcon, label: "Wellbore Integrity" },
+    { icon: ArrowGrowthIcon, label: "Production Enhancements" },
+    { icon: WrenchIcon, label: "Perforating Operations" },
+    { icon: DataAreaIcon, label: "Full Data Acquisition" },
+    { icon: ProtectIcon, label: "Wellhead Maintenance" },
   ];
 
   return (
@@ -59,7 +65,7 @@ const Marine = () => {
                   className="flex items-center gap-4 bg-background p-4 rounded-lg"
                 >
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <cap.icon className="w-6 h-6 text-accent" />
+                    {typeof cap.icon === 'function' ? React.createElement(cap.icon, { className: "w-6 h-6 text-accent" }) : <img src={cap.icon} className="w-6 h-6 text-accent" alt={cap.label} />}
                   </div>
                   <span className="font-medium text-foreground">{cap.label}</span>
                 </div>

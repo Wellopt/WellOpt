@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -8,6 +8,12 @@ import wellheadCard from "@/assets/wellhead-card.jpg";
 import wellheadEquipment1 from "@/assets/wellhead-equipment-1.png";
 import wellheadEquipment2 from "@/assets/wellhead-equipment-2.png";
 import wellheadEquipment3 from "@/assets/wellhead-equipment-3.png";
+import ScheduleIcon from "@/assets/wellheacd icons/dashicons_schedule.svg";
+import DashboardIcon from "@/assets/wellheacd icons/ic_outline-dashboard.svg";
+import ProtectIcon from "@/assets/wellheacd icons/icon-park-outline_protect.svg";
+import RefreshIcon from "@/assets/wellheacd icons/mdi_refresh.svg";
+import ValveIcon from "@/assets/wellheacd icons/mdi_valve.svg";
+import AlertIcon from "@/assets/wellheacd icons/mingcute_alert-line.svg";
 
 const Wellhead = () => {
   useEffect(() => {
@@ -16,11 +22,11 @@ const Wellhead = () => {
 
   const capabilities = [
     { icon: Wrench, label: "Routine Maintenance" },
-    { icon: AlertTriangle, label: "Non-Routine Maintenance" },
-    { icon: Activity, label: "Wellhead Monitoring" },
-    { icon: Settings, label: "Valve & Actuator Servicing" },
-    { icon: Search, label: "Wellhead Integrity Testing" },
-    { icon: RefreshCw, label: "Valve Refurbishment" },
+    { icon: AlertIcon, label: "Non-Routine Maintenance" },
+    { icon: ScheduleIcon, label: "Wellhead Monitoring" },
+    { icon: ValveIcon, label: "Valve & Actuator Servicing" },
+    { icon: DashboardIcon, label: "Wellhead Integrity Testing" },
+    { icon: RefreshIcon, label: "Valve Refurbishment" },
   ];
 
   return (
@@ -64,7 +70,7 @@ const Wellhead = () => {
                   className="flex items-center gap-4 bg-background p-4 rounded-lg"
                 >
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <cap.icon className="w-6 h-6 text-accent" />
+                    {typeof cap.icon === 'function' ? React.createElement(cap.icon, { className: "w-6 h-6 text-accent" }) : <img src={cap.icon} className="w-6 h-6 text-accent" alt={cap.label} />}
                   </div>
                   <span className="font-medium text-foreground">{cap.label}</span>
                 </div>

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -7,6 +7,12 @@ import { Gauge, FlaskConical, TrendingUp, Activity, Grid3X3, Target } from "luci
 import bhpCard from "@/assets/bhp.jpg";
 import bhpEquipment1 from "@/assets/bhp-equipment-1.png";
 import bhpEquipment2 from "@/assets/bhp-equipment-2.png";
+import FlowDotIcon from "@/assets/bhp survey icons/fluent_flow-dot-24-regular.svg";
+import DashboardIcon from "@/assets/bhp survey icons/ic_outline-dashboard.svg";
+import SyncIcon from "@/assets/bhp survey icons/material-symbols_sync-rounded.svg";
+import BoilPointIcon from "@/assets/bhp survey icons/mdi_boil-point-outline.svg";
+import LevelsGraphIcon from "@/assets/bhp survey icons/streamline-flex_curves-levels-graph-remix.svg";
+import TargetIcon from "@/assets/bhp survey icons/streamline-sharp_target-3-solid.svg";
 
 const BHPSurvey = () => {
   useEffect(() => {
@@ -14,12 +20,12 @@ const BHPSurvey = () => {
   }, []);
 
   const applications = [
-    { icon: FlaskConical, label: "Drill Stem Tests" },
-    { icon: TrendingUp, label: "Production Tests" },
-    { icon: Gauge, label: "Pressure Gradient Surveys" },
-    { icon: Activity, label: "Interference & Injection Tests" },
-    { icon: Grid3X3, label: "Pressure Monitoring" },
-    { icon: Target, label: "Frac & Perforation Monitoring" },
+    { icon: FlowDotIcon, label: "Drill Stem Tests" },
+    { icon: SyncIcon, label: "Production Tests" },
+    { icon: BoilPointIcon, label: "Pressure Gradient Surveys" },
+    { icon: LevelsGraphIcon, label: "Interference & Injection Tests" },
+    { icon: DashboardIcon, label: "Pressure Monitoring" },
+    { icon: TargetIcon, label: "Frac & Perforation Monitoring" },
   ];
 
   return (
@@ -63,7 +69,7 @@ const BHPSurvey = () => {
                   className="flex items-center gap-4 bg-background p-4 rounded-lg"
                 >
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <app.icon className="w-6 h-6 text-accent" />
+                    {typeof app.icon === 'function' ? React.createElement(app.icon, { className: "w-6 h-6 text-accent" }) : <img src={app.icon} className="w-6 h-6 text-accent" alt={app.label} />}
                   </div>
                   <span className="font-medium text-foreground">{app.label}</span>
                 </div>

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect, ReactElement } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -12,6 +12,14 @@ import equipment2 from "@/assets/equipment-2.jpg";
 import equipment3 from "@/assets/equipment-3.jpg";
 import equipment4 from "@/assets/equipment-4.jpg";
 import equipment5 from "@/assets/equipment-5.jpg";
+import Icon1 from "@/assets/slickline service icon/1.svg";
+import Icon2 from "@/assets/slickline service icon/2.svg";
+import Icon3 from "@/assets/slickline service icon/3.svg";
+import Icon4 from "@/assets/slickline service icon/4.svg";
+import Icon5 from "@/assets/slickline service icon/5.svg";
+import Icon6 from "@/assets/slickline service icon/6.svg";
+import Icon7 from "@/assets/slickline service icon/7.svg";
+import Icon8 from "@/assets/slickline service icon/8.svg";
 
 const Slickline = () => {
   useEffect(() => {
@@ -19,14 +27,14 @@ const Slickline = () => {
   }, []);
 
   const capabilities = [
-    { icon: Settings, label: "Precision Operations" },
-    { icon: CheckCircle, label: "Wellbore Integrity" },
-    { icon: TrendingUp, label: "Production Enhancements" },
-    { icon: Search, label: "Fishing Operations" },
-    { icon: Layers, label: "Zone Isolation" },
-    { icon: ShieldCheck, label: "Safety Valve Operations" },
-    { icon: Zap, label: "Perforating Operations" },
-    { icon: Menu, label: "And Other Operations" },
+    { icon: Icon1, label: "Precision Operations" },
+    { icon: Icon2, label: "Wellbore Integrity" },
+    { icon: Icon3, label: "Production Enhancements" },
+    { icon: Icon4, label: "Fishing Operations" },
+    { icon: Icon5, label: "Zone Isolation" },
+    { icon: Icon6, label: "Safety Valve Operations" },
+    { icon: Icon7, label: "Perforating Operations" },
+    { icon: Icon8, label: "And Other Operations" },
   ];
 
   return (
@@ -69,7 +77,7 @@ const Slickline = () => {
                   className="flex items-center gap-4 bg-background p-4 rounded-lg"
                 >
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <cap.icon className="w-6 h-6 text-accent" />
+                    {typeof cap.icon === 'function' ? React.createElement(cap.icon, { className: "w-6 h-6 text-accent" }) : <img src={cap.icon} className="w-6 h-6 text-accent" alt={cap.label} />}
                   </div>
                   <span className="font-medium text-foreground">{cap.label}</span>
                 </div>
