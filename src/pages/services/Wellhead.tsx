@@ -21,11 +21,11 @@ const Wellhead = () => {
   }, []);
 
   const capabilities = [
-    { icon: Wrench, label: "Routine Maintenance" },
+    { icon: ScheduleIcon, label: "Routine Maintenance" },
     { icon: AlertIcon, label: "Non-Routine Maintenance" },
-    { icon: ScheduleIcon, label: "Wellhead Monitoring" },
+    { icon: DashboardIcon, label: "Wellhead Monitoring" },
     { icon: ValveIcon, label: "Valve & Actuator Servicing" },
-    { icon: DashboardIcon, label: "Wellhead Integrity Testing" },
+    { icon: ProtectIcon, label: "Wellhead Integrity Testing" },
     { icon: RefreshIcon, label: "Valve Refurbishment" },
   ];
 
