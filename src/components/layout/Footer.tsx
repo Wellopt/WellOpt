@@ -141,6 +141,12 @@ const Footer = ({ showCTA = true }: FooterProps) => {
                 </a>
               </li>
               <li className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-white" />
+                <a href="mailto:info@wellopt.com" className="hover:text-accent transition-colors">
+                  info@wellopt.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-white" />
                 <a href="tel:+2348139441557" className="hover:text-accent transition-colors">
                   +234 813 944 1557

@@ -219,13 +219,22 @@ const Contact = () => {
 
                   <div>
                     <h3 className="text-xl font-bold text-accent mb-4">Send Us a Mail</h3>
-                    <a
-                      href="mailto:welloptwl@wellopt.com"
-                      className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors"
-                    >
-                      <Mail className="w-4 h-4" />
-                      welloptwl@wellopt.com
-                    </a>
+                    <div className="space-y-2">
+                      <a
+                        href="mailto:welloptwl@wellopt.com"
+                        className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors"
+                      >
+                        <Mail className="w-4 h-4" />
+                        welloptwl@wellopt.com
+                      </a>
+                      <a
+                        href="mailto:info@wellopt.com"
+                        className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors"
+                      >
+                        <Mail className="w-4 h-4" />
+                        info@wellopt.com
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
