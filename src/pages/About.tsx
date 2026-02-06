@@ -104,7 +104,7 @@ const About = () => {
       </section>
 
       {/* Clients Section */}
-      <section className="py-16 md:py-24 bg-background">
+      <section id="clients" className="py-16 md:py-24 bg-background">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-accent mb-4">
             Our Clients
